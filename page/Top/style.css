@@ -1,0 +1,324 @@
+.top,
+.top * {
+  box-sizing: border-box;
+}
+.top {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  /* width: 1300px; */
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.header {
+  background: #e7e6e6;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1300px;
+  height: 81px;
+  position: relative;
+  overflow: hidden;
+}
+.logo-container {
+  padding: 10px;
+  flex-shrink: 0;
+  /* width: 94px;
+  height: 74px; */
+  position: relative;
+  overflow: hidden;
+}
+.text-container {
+  padding: 16px 0px 16px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.warehouse {
+  color: #000000;
+  text-align: left;
+  font: var(--title, 700 20px "Inter-Bold", sans-serif);
+  position: relative;
+}
+.dropdown-container {
+  padding: 24px 0px 24px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.dropdown {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  padding: 10px 5px 10px 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.exe-hcm-wh {
+  color: #0b0b0b;
+  text-align: left;
+  font: 500 18px "Inter-Medium", sans-serif;
+  position: relative;
+}
+.arrow-down-icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 8.77px;
+  position: relative;
+  overflow: visible;
+}
+.text-container2 {
+  padding: 16px 0px 16px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.hello-admin {
+  color: #000000;
+  text-align: left;
+  font: var(--title, 700 20px "Inter-Bold", sans-serif);
+  position: relative;
+}
+.text-container3 {
+  padding: 16px 20px 16px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.logout {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transform: translate(-30px, 0px);
+  overflow: visible;
+}
+.log-out {
+  color: #000000;
+  text-align: left;
+  font: var(--title, 700 20px "Inter-Bold", sans-serif);
+  position: relative;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  /* width: 1300px; */
+  height: 880px;
+  position: relative;
+  overflow-y: auto;
+}
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  /* width: 1300px; */
+  position: relative;
+  overflow-x: auto;
+}
+.navigation-bar {
+  background: #ffffff;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1200px;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+}
+.tab-1 {
+  background: #f0f0f0;
+  /* padding: 0px 5px 0px 5px; */
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.receiving {
+  color: #7c7c7c;
+  text-align: left;
+  font: 500 20px "Inter-Medium", sans-serif;
+  position: relative;
+}
+.shipment {
+  color: #7c7c7c;
+  text-align: left;
+  font: 500 20px "Inter-Medium", sans-serif;
+  position: relative;
+}
+.inventory {
+  color: #7c7c7c;
+  text-align: left;
+  font: 500 20px "Inter-Medium", sans-serif;
+  position: relative;
+}
+.stock-taking {
+  color: #7c7c7c;
+  text-align: left;
+  font: 500 20px "Inter-Medium", sans-serif;
+  position: relative;
+}
+.management {
+  color: #7c7c7c;
+  text-align: left;
+  font: 500 20px "Inter-Medium", sans-serif;
+  position: relative;
+}
+.general-settings {
+  color: #7c7c7c;
+  text-align: left;
+  font: 500 20px "Inter-Medium", sans-serif;
+  position: relative;
+}
+.title-bar {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1200px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+.title-container {
+  background: #253052;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  padding: 8px 5px 8px 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-14 {
+  background: #ff7001;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.text-contaier {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.top2 {
+  color: #ffffff;
+  text-align: left;
+  font: var(--title, 700 20px "Inter-Bold", sans-serif);
+  position: relative;
+}
+.text-container4 {
+  background: #eef0ed;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+}
+.welcome-warehouse-management-system {
+  color: #000000;
+  text-align: left;
+  font: var(--title, 700 20px "Inter-Bold", sans-serif);
+  position: relative;
+}
+.footer {
+  background: #f1f2f1;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.copyright-system-exe-vietnam-2022 {
+  color: #000000;
+  text-align: left;
+  font: 500 13px "Inter-Medium", sans-serif;
+  position: relative;
+}
