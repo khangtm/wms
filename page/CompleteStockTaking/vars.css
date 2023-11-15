@@ -1,0 +1,26 @@
+/* Figma Styles of your File */
+:root {
+  /* Colors */
+  --header: #253052;
+  --sub-header: #3f3e3c;
+  --disabled: #cbcbcb;
+  --orange: #ff7001;
+  --blue: #0029ff;
+  --blue-week: #87cefa;
+  --yellow: #fca138;
+  --white: #ffffff;
+  --black: #000000;
+  --red: #ff0000;
+
+  /* Fonts */
+  --title: 700 20px "Inter-Bold", sans-serif;
+  --sub-tittle: 600 18px "Inter-SemiBold", sans-serif;
+  --sub-sub-tittle: 500 16px "Inter-Medium", sans-serif;
+  --link: 400 13px "Inter-Regular", sans-serif;
+  --normal-link: 400 15px "Inter-Regular", sans-serif;
+  --normal: 400 15px "Inter-Regular", sans-serif;
+  --normal-medium: 500 15px "Inter-Medium", sans-serif;
+  --normal-bold: 700 15px "Inter-Bold", sans-serif;
+
+  /* Effects */
+}
