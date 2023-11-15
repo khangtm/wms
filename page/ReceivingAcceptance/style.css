@@ -4,28 +4,29 @@
 }
 .receiving-acceptance {
   background: #ffffff;
-  width: 1300px;
-  height: 3938px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
   position: relative;
   overflow: hidden;
 }
+
 .content {
-  padding: 10px 20px 20px 20px;
   display: flex;
   flex-direction: column;
   gap: 0px;
   align-items: center;
   justify-content: flex-start;
   width: 1300px;
-  height: 3813px;
-  position: absolute;
-  left: 0px;
-  top: 90px;
-  overflow: hidden;
+  position: relative;
 }
+
 .navigation-bar {
   background: #ffffff;
   border-radius: 10px 10px 0px 0px;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   gap: 3px;
@@ -2113,7 +2114,7 @@
   flex-shrink: 0;
   width: 20px;
   height: 0px;
-  position: relative;
+  position: absolute;
   transform-origin: 0 0;
   transform: rotate(-90deg) scale(1, 1);
 }
@@ -3471,11 +3472,10 @@
   gap: 30px;
   align-items: center;
   justify-content: flex-start;
+  flex-shrink: 0;
   width: 1300px;
   height: 81px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
+  position: relative;
   overflow: hidden;
 }
 .logo-container {
@@ -3595,11 +3595,11 @@
   gap: 0px;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   width: 1300px;
   height: 30px;
-  position: absolute;
-  left: 0px;
-  top: 3918px;
+  margin-top: 20px;
+  position: relative;
   overflow: hidden;
 }
 .copyright-system-exe-vietnam-2022 {

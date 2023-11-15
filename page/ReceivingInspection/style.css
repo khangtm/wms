@@ -5,7 +5,7 @@
 .receiving-receiving-inspection {
   background: #ffffff;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 0px;
   align-items: flex-start;
   justify-content: flex-start;
@@ -137,21 +137,18 @@
   position: relative;
 }
 .content {
-  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 0px;
   align-items: center;
   justify-content: flex-start;
-  flex-shrink: 0;
   width: 1300px;
-  height: 3850px;
   position: relative;
-  overflow: hidden;
 }
 .navigation-bar {
   background: #ffffff;
   border-radius: 10px 10px 0px 0px;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   gap: 3px;
@@ -367,7 +364,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  height: 3620px;
+  height: fit-content;
   position: relative;
 }
 .item {
@@ -3615,6 +3612,7 @@
   flex-shrink: 0;
   width: 1300px;
   height: 30px;
+  margin-top: 20px;
   position: relative;
   overflow: hidden;
 }
