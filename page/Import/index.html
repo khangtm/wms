@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./vars.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./dropdownNavigationBar.css" />
+
+    <style>
+      a,
+      button,
+      input,
+      select,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      * {
+        margin: 0;
+        padding: 0;
+        border: none;
+        text-decoration: none;
+        appearance: none;
+        background: none;
+
+        -webkit-font-smoothing: antialiased;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="import">
+      <div class="header">
+        <img class="logo-container" src="logo-container0.png" />
+        <div class="text-container">
+          <div class="warehouse">Warehouse</div>
+          <div class="dropdown-container">
+            <div class="dropdown">
+              <div class="exe-hcm-wh">EXE-HCM-WH</div>
+              <svg
+                class="arrow-down-icon"
+                width="16"
+                height="9"
+                viewBox="0 0 16 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.226756 0.340037C0.501612 0.0651815 0.931716 0.0401946 1.2348 0.265077L1.32163 0.340037L8 7.01806L14.6784 0.340037C14.9532 0.0651815 15.3833 0.0401946 15.6864 0.265077L15.7732 0.340037C16.0481 0.614893 16.0731 1.045 15.8482 1.34808L15.7732 1.43491L8.54744 8.66072C8.27258 8.93557 7.84248 8.96056 7.53939 8.73568L7.45256 8.66072L0.226756 1.43491C-0.0755853 1.13257 -0.0755853 0.642379 0.226756 0.340037Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="text-container2">
+          <div class="hello-admin">Hello, Admin</div>
+        </div>
+        <div class="text-container3">
+          <svg
+            class="logout"
+            width="30"
+            height="31"
+            viewBox="0 0 30 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_293_9388)">
+              <path
+                d="M8.75 9.25L10.5125 11.0125L7.2875 14.25H20V16.75H7.2875L10.5125 19.975L8.75 21.75L2.5 15.5L8.75 9.25ZM25 6.75H15V4.25H25C26.375 4.25 27.5 5.375 27.5 6.75V24.25C27.5 25.625 26.375 26.75 25 26.75H15V24.25H25V6.75Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_293_9388">
+                <rect
+                  width="30"
+                  height="30"
+                  fill="white"
+                  transform="matrix(-1 0 0 1 30 0.5)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <div class="log-out">Log out</div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="content">
+          <div class="navigation-bar">
+            <div class="tab-1">
+              <div class="dropdownBar">
+                <button class="dropbtn">Receiving
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdownBar-content">
+                  <a href="../ReceivingPlan/index.html">Receiving Plan</a>
+                  <a href="../ReceivingAcceptance/index.html">Acceptance</a>
+                  <a href="../ReceivingInspection/index.html">Receiving Inspection</a>
+                  <a href="../ReceivingStatusInquire/index.html">StatusInquiry</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-1">
+              <div class="dropdownBar">
+                <button class="dropbtn">Shipment
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdownBar-content">
+                  <a href="../ShipmentPlan/index.html">Shipment Plan</a>
+                  <a href="../ShipmentInstruction/index.html">Instruction</a>
+                  <a href="../ShipmentAllocation/index.html">Allocation</a>
+                  <a href="../ShipmentInspection/index.html">Shipment Inspection</a>
+                  <a href="../ShipmentStatusInquiry/index.html">Status Inquiry</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-1">
+              <div class="dropdownBar">
+                <button class="dropbtn">Inventory
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdownBar-content">
+                  <a href="../QuantityAdjustment/index.html">Quantity Adjustment</a>
+                  <a href="../LocationTransfer/index.html">Location Transfer</a>
+                  <a href="../StatusChange/index.html">Status Change</a>
+                  <a href="../StockInquiry/index.html">Stock Inquiry</a>
+                  <a href="../DetailsOfChangedHistory/index.html">Details of Changed History</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-1">
+              <div class="dropdownBar">
+                <button class="dropbtn">Stock-taking
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdownBar-content">
+                  <a href="../StartStockTaking/index.html">Start Stock-taking</a>
+                  <a href="../ModifyStockTaking/index.html">Modify Stock-taking</a>
+                  <a href="../CompleteStockTaking/index.html">Complete Stock-taking</a>
+                  <a href="../StockTakingOutput/index.html">Stock-taking Output</a>
+                </div>
+            </div>
+            </div>
+            <div class="tab-1">
+              <div class="dropdownBar">
+                <button class="dropbtn">Management
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdownBar-content">
+                  <a href="../ItemMaster/index.html">Item Master</a>
+                  <a href="../CustomerMaster/index.html">Customer Master</a>
+                  <a href="../ShipToMaster/index.html">Ship-To Master</a>
+                  <a href="../Import/index.html">Import</a>
+                  <a href="../Export/index.html">Export</a>
+                  <a href="../LocationMasterLocationMaster/">Location Masters</a>
+                  <a href="../LocationMasterZoneMaster/">Zone Master</a>
+                  <a href="../LocationMasterReceivingLocation/index.html">Receiving Location</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-1">
+              <div class="dropdownBar">
+                <button class="dropbtn">General Settings
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdownBar-content">
+                  <a href="../ProfileSetting/index.html">Profile Setting</a>
+                  <a href="../RegisterWarehouse/index.html">Register Warehouse</a>
+                  <a href="../User/index.html">User</a>
+                  <a href="../AccessAuthority/index.html">Access Authority</a>
+                  <a href="../Language/index.html">Language</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="title-bar">
+            <div class="title-container">
+              <div class="frame-14"></div>
+              <div class="text-contaier">
+                <div class="import2">Import</div>
+                <div class="pm-07">[PM07]</div>
+              </div>
+            </div>
+            <div class="text-container4">
+              <div class="import-guidance">Import guidance</div>
+              <div class="import-guide-detail">Import guide detail</div>
+            </div>
+          </div>
+          <div class="sub-nav-bar-container">
+            <div class="content2">
+              <div class="sub-nav-bar">
+                <div class="text-input">
+                  <div class="menu-bar-list">[Menu bar list]</div>
+                </div>
+                <div class="text-input">
+                  <div class="import3">Import</div>
+                </div>
+                <div class="text-input">
+                  <div class="register-import-pattern">
+                    Register Import Pattern
+                  </div>
+                </div>
+                <div class="text-input">
+                  <div class="modify-import-pattern">Modify Import Pattern</div>
+                </div>
+                <div class="text-input">
+                  <div class="import-history">Import History</div>
+                </div>
+                <div class="text-input">
+                  <div class="copy-import-pattern">Copy Import pattern</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="list-item">
+            <div class="item-container">
+              <div class="item">
+                <div class="header2">
+                  <svg
+                    class="icon-container"
+                    width="15"
+                    height="30"
+                    viewBox="0 0 15 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0 15C0 14.6022 0.0658481 14.2206 0.183058 13.9393C0.300269 13.658 0.45924 13.5 0.625 13.5H14.375C14.5408 13.5 14.6997 13.658 14.8169 13.9393C14.9342 14.2206 15 14.6022 15 15C15 15.3978 14.9342 15.7794 14.8169 16.0607C14.6997 16.342 14.5408 16.5 14.375 16.5H0.625C0.45924 16.5 0.300269 16.342 0.183058 16.0607C0.0658481 15.7794 0 15.3978 0 15Z"
+                      fill="#FF7001"
+                    />
+                  </svg>
+
+                  <div class="import4">Import</div>
+                  <div class="fm-07-01">[FM07_01]</div>
+                </div>
+                <div class="content3">
+                  <div class="row">
+                    <div class="left">
+                      <div class="file-type">
+                        <span
+                          ><span class="file-type-span">File Type </span
+                          ><span class="file-type-span2">*</span></span
+                        >
+                      </div>
+                    </div>
+                    <div class="right2">
+                      <div class="dropdown-container2">
+                        <div class="dropdown2">
+                          <div class="please-select">Please select</div>
+                          <div class="arrow-down-icon2">
+                            <svg
+                              class="arrow-down-22"
+                              width="16"
+                              height="10"
+                              viewBox="0 0 16 10"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M0.226756 0.840037C0.501612 0.565181 0.931716 0.540195 1.2348 0.765077L1.32163 0.840037L8 7.51806L14.6784 0.840037C14.9532 0.565181 15.3833 0.540195 15.6864 0.765077L15.7732 0.840037C16.0481 1.11489 16.0731 1.545 15.8482 1.84808L15.7732 1.93491L8.54744 9.16072C8.27258 9.43557 7.84248 9.46056 7.53939 9.23568L7.45256 9.16072L0.226756 1.93491C-0.0755853 1.63257 -0.0755853 1.14238 0.226756 0.840037Z"
+                                fill="black"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="left">
+                      <div class="loading-pattern">
+                        <span
+                          ><span class="loading-pattern-span"
+                            >Loading Pattern </span
+                          ><span class="loading-pattern-span2">*</span></span
+                        >
+                      </div>
+                    </div>
+                    <div class="right3">
+                      <div class="dropdown-container2">
+                        <div class="dropdown2">
+                          <div class="please-select2">Please select</div>
+                          <div class="arrow-down-icon2">
+                            <svg
+                              class="arrow-down-23"
+                              width="16"
+                              height="10"
+                              viewBox="0 0 16 10"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M0.226756 0.840037C0.501612 0.565181 0.931716 0.540195 1.2348 0.765077L1.32163 0.840037L8 7.51806L14.6784 0.840037C14.9532 0.565181 15.3833 0.540195 15.6864 0.765077L15.7732 0.840037C16.0481 1.11489 16.0731 1.545 15.8482 1.84808L15.7732 1.93491L8.54744 9.16072C8.27258 9.43557 7.84248 9.46056 7.53939 9.23568L7.45256 9.16072L0.226756 1.93491C-0.0755853 1.63257 -0.0755853 1.14238 0.226756 0.840037Z"
+                                fill="black"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="left">
+                      <div class="file-name">File Name</div>
+                    </div>
+                    <div class="right3">
+                      <div class="btn">
+                        <div class="choose-file">Choose File</div>
+                      </div>
+                      <div class="no-file-chosen">No file chosen</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="left2"></div>
+                    <div class="right3">
+                      <div class="square">
+                        <svg
+                          class="group"
+                          width="15"
+                          height="16"
+                          viewBox="0 0 15 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.25 4.875L6 11.125L3.75 8.625"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M13.125 0.5H1.875C0.839466 0.5 0 1.33947 0 2.375V13.625C0 14.6605 0.839466 15.5 1.875 15.5H13.125C14.1605 15.5 15 14.6605 15 13.625V2.375C15 1.33947 14.1605 0.5 13.125 0.5Z"
+                            stroke="#747474"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="load-data-of-login-warehouse-only">
+                        Load data of login warehouse only
+                      </div>
+                    </div>
+                  </div>
+                  <div class="textcontainer"></div>
+                  <div class="form-item">
+                    <div class="header3">
+                      <svg
+                        class="icon-container2"
+                        width="30"
+                        height="15"
+                        viewBox="0 0 30 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M5 7.5C5 7.10218 5.06585 6.72064 5.18306 6.43934C5.30027 6.15804 5.45924 6 5.625 6H19.375C19.5408 6 19.6997 6.15804 19.8169 6.43934C19.9342 6.72064 20 7.10218 20 7.5C20 7.89782 19.9342 8.27936 19.8169 8.56066C19.6997 8.84197 19.5408 9 19.375 9H5.625C5.45924 9 5.30027 8.84197 5.18306 8.56066C5.06585 8.27936 5 7.89782 5 7.5Z"
+                          fill="black"
+                        />
+                      </svg>
+
+                      <div class="detail-settings">Detail Settings</div>
+                    </div>
+
+                    <div>
+                      <div class="row2">
+                        <div class="left3">
+                          <div class="header4">Header</div>
+                        </div>
+                        <div class="right4">
+                          <div class="right5">
+                            <div class="radio-button-1">
+                              <svg
+                                class="radio-button"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g clip-path="url(#clip0_293_9460)">
+                                  <rect
+                                    width="20"
+                                    height="20"
+                                    rx="10"
+                                    fill="#EEEEEE"
+                                  />
+                                  <path
+                                    d="M10 0.75C4.89137 0.75 0.75 4.89137 0.75 10C0.75 15.1086 4.89137 19.25 10 19.25C15.1086 19.25 19.25 15.1086 19.25 10C19.25 4.89137 15.1086 0.75 10 0.75ZM0.5 10C0.5 4.75329 4.75329 0.5 10 0.5C15.2467 0.5 19.5 4.75329 19.5 10C19.5 15.2467 15.2467 19.5 10 19.5C4.75329 19.5 0.5 15.2467 0.5 10Z"
+                                    fill="#676767"
+                                    stroke="#676767"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_293_9460">
+                                    <rect
+                                      width="20"
+                                      height="20"
+                                      rx="10"
+                                      fill="white"
+                                    />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+  
+                              <div class="yes">Yes</div>
+                            </div>
+                            <div class="radio-button-12">
+                              <svg
+                                class="radio-button2"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g clip-path="url(#clip0_293_9463)">
+                                  <rect
+                                    width="20"
+                                    height="20"
+                                    rx="10"
+                                    fill="#EEEEEE"
+                                  />
+                                  <path
+                                    d="M10 0.75C4.89137 0.75 0.75 4.89137 0.75 10C0.75 15.1086 4.89137 19.25 10 19.25C15.1086 19.25 19.25 15.1086 19.25 10C19.25 4.89137 15.1086 0.75 10 0.75ZM0.5 10C0.5 4.75329 4.75329 0.5 10 0.5C15.2467 0.5 19.5 4.75329 19.5 10C19.5 15.2467 15.2467 19.5 10 19.5C4.75329 19.5 0.5 15.2467 0.5 10Z"
+                                    fill="#676767"
+                                    stroke="#676767"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_293_9463">
+                                    <rect
+                                      width="20"
+                                      height="20"
+                                      rx="10"
+                                      fill="white"
+                                    />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+  
+                              <div class="no">No</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="row3">
+                        <div class="left3">
+                          <div class="file-format">File Format</div>
+                        </div>
+                        <div class="right6">
+                          <div class="input-container">
+                            <div class="text"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row3">
+                        <div class="left3">
+                          <div class="separatpr-char">Separator Char</div>
+                        </div>
+                        <div class="right5">
+                          <div class="radio-button-1">
+                            <svg
+                              class="radio-button3"
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_293_9465)">
+                                <rect
+                                  width="20"
+                                  height="20"
+                                  rx="10"
+                                  fill="#EEEEEE"
+                                />
+                                <path
+                                  d="M10 0.75C4.89137 0.75 0.75 4.89137 0.75 10C0.75 15.1086 4.89137 19.25 10 19.25C15.1086 19.25 19.25 15.1086 19.25 10C19.25 4.89137 15.1086 0.75 10 0.75ZM0.5 10C0.5 4.75329 4.75329 0.5 10 0.5C15.2467 0.5 19.5 4.75329 19.5 10C19.5 15.2467 15.2467 19.5 10 19.5C4.75329 19.5 0.5 15.2467 0.5 10Z"
+                                  fill="#676767"
+                                  stroke="#676767"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_293_9465">
+                                  <rect
+                                    width="20"
+                                    height="20"
+                                    rx="10"
+                                    fill="white"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+  
+                            <div class="comma">COMMA</div>
+                          </div>
+                          <div class="radio-button-12">
+                            <svg
+                              class="radio-button4"
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_293_9467)">
+                                <rect
+                                  width="20"
+                                  height="20"
+                                  rx="10"
+                                  fill="#EEEEEE"
+                                />
+                                <path
+                                  d="M10 0.75C4.89137 0.75 0.75 4.89137 0.75 10C0.75 15.1086 4.89137 19.25 10 19.25C15.1086 19.25 19.25 15.1086 19.25 10C19.25 4.89137 15.1086 0.75 10 0.75ZM0.5 10C0.5 4.75329 4.75329 0.5 10 0.5C15.2467 0.5 19.5 4.75329 19.5 10C19.5 15.2467 15.2467 19.5 10 19.5C4.75329 19.5 0.5 15.2467 0.5 10Z"
+                                  fill="#676767"
+                                  stroke="#676767"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_293_9467">
+                                  <rect
+                                    width="20"
+                                    height="20"
+                                    rx="10"
+                                    fill="white"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+  
+                            <div class="tab">TAB</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                  
+                  </div>
+                  <div class="textcontainer2">
+                    <div class="btn-container">
+                      <div class="btn2">
+                        <div class="execute">Execute</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="textcontainer3">
+                    <div class="page-top">▲ Page Top</div>
+                  </div>
+                  <div class="textcontainer4">
+                    <div class="text-container5">
+                      <div class="help-import">Help [Import]</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="copyright-system-exe-vietnam-2022">
+            Copyright © SystemEXE Vietnam 2022
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+</html>

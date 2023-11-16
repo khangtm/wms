@@ -29,8 +29,9 @@
   overflow: hidden;
 }
 .logo-container {
-  padding: 10px;
   flex-shrink: 0;
+  width: 114px;
+  height: 100px;
   position: relative;
   overflow: hidden;
 }
@@ -114,7 +115,7 @@
   padding: 16px 20px 16px 0px;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  /* gap: 10px; */
   align-items: center;
   justify-content: flex-end;
   align-self: stretch;
@@ -127,7 +128,7 @@
   width: 30px;
   height: 30px;
   position: relative;
-  transform: translate(-30px, 0px);
+  background-color: black;
   overflow: visible;
 }
 .log-out {

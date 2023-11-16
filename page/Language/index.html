@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./vars.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./dropdownNavigationBar.css" />
+    <style>
+      a,
+      button,
+      input,
+      select,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      * {
+        margin: 0;
+        padding: 0;
+        border: none;
+        text-decoration: none;
+        appearance: none;
+        background: none;
+
+        -webkit-font-smoothing: antialiased;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="language">
+      <div class="header">
+        <img class="logo-container" src="logo-container0.png" />
+        <div class="text-container">
+          <div class="warehouse">Warehouse</div>
+          <div class="dropdown-container">
+            <div class="dropdown">
+              <div class="exe-hcm-wh">EXE-HCM-WH</div>
+              <svg
+                class="arrow-down-icon"
+                width="16"
+                height="9"
+                viewBox="0 0 16 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.226756 0.340037C0.501612 0.0651815 0.931716 0.0401946 1.2348 0.265077L1.32163 0.340037L8 7.01806L14.6784 0.340037C14.9532 0.0651815 15.3833 0.0401946 15.6864 0.265077L15.7732 0.340037C16.0481 0.614893 16.0731 1.045 15.8482 1.34808L15.7732 1.43491L8.54744 8.66072C8.27258 8.93557 7.84248 8.96056 7.53939 8.73568L7.45256 8.66072L0.226756 1.43491C-0.0755853 1.13257 -0.0755853 0.642379 0.226756 0.340037Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="text-container2">
+          <div class="hello-admin">Hello, Admin</div>
+        </div>
+        <div class="text-container3">
+          <svg
+            class="logout"
+            width="30"
+            height="31"
+            viewBox="0 0 30 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_288_24650)">
+              <path
+                d="M8.75 9.25L10.5125 11.0125L7.2875 14.25H20V16.75H7.2875L10.5125 19.975L8.75 21.75L2.5 15.5L8.75 9.25ZM25 6.75H15V4.25H25C26.375 4.25 27.5 5.375 27.5 6.75V24.25C27.5 25.625 26.375 26.75 25 26.75H15V24.25H25V6.75Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_288_24650">
+                <rect
+                  width="30"
+                  height="30"
+                  fill="white"
+                  transform="matrix(-1 0 0 1 30 0.5)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <div class="log-out">Log out</div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="content">
+          <div class="navigation-bar">
+            <div class="tab-1">
+              <div class="dropdownBar">
+                <button class="dropbtn">Receiving
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdownBar-content">
+                  <a href="../ReceivingPlan/index.html">Receiving Plan</a>
+                  <a href="../ReceivingAcceptance/index.html">Acceptance</a>
+                  <a href="../ReceivingInspection/index.html">Receiving Inspection</a>
+                  <a href="../ReceivingStatusInquire/index.html">StatusInquiry</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-1">
+              <div class="dropdownBar">
+                <button class="dropbtn">Shipment
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdownBar-content">
+                  <a href="../ShipmentPlan/index.html">Shipment Plan</a>
+                  <a href="../ShipmentInstruction/index.html">Instruction</a>
+                  <a href="../ShipmentAllocation/index.html">Allocation</a>
+                  <a href="../ShipmentInspection/index.html">Shipment Inspection</a>
+                  <a href="../ShipmentStatusInquiry/index.html">Status Inquiry</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-1">
+              <div class="dropdownBar">
+                <button class="dropbtn">Inventory
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdownBar-content">
+                  <a href="../QuantityAdjustment/index.html">Quantity Adjustment</a>
+                  <a href="../LocationTransfer/index.html">Location Transfer</a>
+                  <a href="../StatusChange/index.html">Status Change</a>
+                  <a href="../StockInquiry/index.html">Stock Inquiry</a>
+                  <a href="../DetailsOfChangedHistory/index.html">Details of Changed History</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-1">
+              <div class="dropdownBar">
+                <button class="dropbtn">Stock-taking
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdownBar-content">
+                  <a href="../StartStockTaking/index.html">Start Stock-taking</a>
+                  <a href="../ModifyStockTaking/index.html">Modify Stock-taking</a>
+                  <a href="../CompleteStockTaking/index.html">Complete Stock-taking</a>
+                  <a href="../StockTakingOutput/index.html">Stock-taking Output</a>
+                </div>
+            </div>
+            </div>
+            <div class="tab-1">
+              <div class="dropdownBar">
+                <button class="dropbtn">Management
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdownBar-content">
+                  <a href="../ItemMaster/index.html">Item Master</a>
+                  <a href="../CustomerMaster/index.html">Customer Master</a>
+                  <a href="../ShipToMaster/index.html">Ship-To Master</a>
+                  <a href="../Import/index.html">Import</a>
+                  <a href="../Export/index.html">Export</a>
+                  <a href="../LocationMasterLocationMaster/">Location Masters</a>
+                  <a href="../LocationMasterZoneMaster/">Zone Master</a>
+                  <a href="../LocationMasterReceivingLocation/index.html">Receiving Location</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-1">
+              <div class="dropdownBar">
+                <button class="dropbtn">General Settings
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdownBar-content">
+                  <a href="../ProfileSetting/index.html">Profile Setting</a>
+                  <a href="../RegisterWarehouse/index.html">Register Warehouse</a>
+                  <a href="../User/index.html">User</a>
+                  <a href="../AccessAuthority/index.html">Access Authority</a>
+                  <a href="../Language/index.html">Language</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="title-bar">
+            <div class="title-container">
+              <div class="frame-14"></div>
+              <div class="text-contaier">
+                <div class="language2">Language</div>
+                <div class="pr-07">[PR07]</div>
+              </div>
+            </div>
+            <div class="text-container4">
+              <div class="guidance-for-language-switch">
+                Guidance for language switch
+              </div>
+              <div class="switch-of-language-will-be-performed">
+                Switch of language will be performed.
+              </div>
+            </div>
+          </div>
+          <div class="sub-nav-bar-container">
+            <div class="content2">
+              <div class="sub-nav-bar">
+                <div class="menu-bar-list">[Menu bar list]</div>
+              </div>
+              <div class="sub-nav-bar">
+                <div class="language3">Language</div>
+              </div>
+            </div>
+          </div>
+          <div class="list-item">
+            <div class="item-container">
+              <div class="item">
+                <div class="header2">
+                  <svg
+                    class="icon-container"
+                    width="15"
+                    height="30"
+                    viewBox="0 0 15 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0 15C0 14.6022 0.0658481 14.2206 0.183058 13.9393C0.300269 13.658 0.45924 13.5 0.625 13.5H14.375C14.5408 13.5 14.6997 13.658 14.8169 13.9393C14.9342 14.2206 15 14.6022 15 15C15 15.3978 14.9342 15.7794 14.8169 16.0607C14.6997 16.342 14.5408 16.5 14.375 16.5H0.625C0.45924 16.5 0.300269 16.342 0.183058 16.0607C0.0658481 15.7794 0 15.3978 0 15Z"
+                      fill="#FF7001"
+                    />
+                  </svg>
+
+                  <div class="language4">Language</div>
+                  <div class="fr-07-01">[FR07_01]</div>
+                </div>
+                <div class="content3">
+                  <div class="form-item-no-colapse">
+                    <div class="row">
+                      <div class="left">
+                        <div class="language5">Language</div>
+                        <div class="">*</div>
+                      </div>
+                      <div class="right2">
+                        <div class="dropdown-container2">
+                          <div class="dropdown2">
+                            <div class="english">English</div>
+                            <svg
+                              class="arrow-down-icon2"
+                              width="16"
+                              height="10"
+                              viewBox="0 0 16 10"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M0.226756 0.840037C0.501612 0.565181 0.931716 0.540195 1.2348 0.765077L1.32163 0.840037L8 7.51806L14.6784 0.840037C14.9532 0.565181 15.3833 0.540195 15.6864 0.765077L15.7732 0.840037C16.0481 1.11489 16.0731 1.545 15.8482 1.84808L15.7732 1.93491L8.54744 9.16072C8.27258 9.43557 7.84248 9.46056 7.53939 9.23568L7.45256 9.16072L0.226756 1.93491C-0.0755853 1.63257 -0.0755853 1.14238 0.226756 0.840037Z"
+                                fill="black"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="textcontainer">
+                      <div class="header3">
+                        <div class="text-container5">
+                          <div
+                            class="select-operation-and-click-execute-button"
+                          >
+                            Select operation and click execute button
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row2">
+                        <div class="text-container6">
+                          <svg
+                            class="radio-icon"
+                            width="20"
+                            height="21"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10 15.5C8.67392 15.5 7.40215 14.9732 6.46447 14.0355C5.52678 13.0979 5 11.8261 5 10.5C5 9.17392 5.52678 7.90215 6.46447 6.96447C7.40215 6.02678 8.67392 5.5 10 5.5C11.3261 5.5 12.5979 6.02678 13.5355 6.96447C14.4732 7.90215 15 9.17392 15 10.5C15 11.8261 14.4732 13.0979 13.5355 14.0355C12.5979 14.9732 11.3261 15.5 10 15.5ZM10 16.75C11.6576 16.75 13.2473 16.0915 14.4194 14.9194C15.5915 13.7473 16.25 12.1576 16.25 10.5C16.25 8.8424 15.5915 7.25269 14.4194 6.08058C13.2473 4.90848 11.6576 4.25 10 4.25C8.3424 4.25 6.75269 4.90848 5.58058 6.08058C4.40848 7.25269 3.75 8.8424 3.75 10.5C3.75 12.1576 4.40848 13.7473 5.58058 14.9194C6.75269 16.0915 8.3424 16.75 10 16.75Z"
+                              fill="#7C7C7C"
+                            />
+                            <path
+                              d="M12.5 10.5C12.5 11.163 12.2366 11.7989 11.7678 12.2678C11.2989 12.7366 10.663 13 10 13C9.33696 13 8.70107 12.7366 8.23223 12.2678C7.76339 11.7989 7.5 11.163 7.5 10.5C7.5 9.83696 7.76339 9.20107 8.23223 8.73223C8.70107 8.26339 9.33696 8 10 8C10.663 8 11.2989 8.26339 11.7678 8.73223C12.2366 9.20107 12.5 9.83696 12.5 10.5Z"
+                              fill="#7C7C7C"
+                            />
+                          </svg>
+
+                          <div class="set-to-selected-language">
+                            Set to selected language.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="btn-container">
+                        <div class="btn">
+                          <div class="execute">Execute</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="textcontainer2">
+                    <div class="text-container7">
+                      <div class="help-language">Help [Language]</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="copyright-system-exe-vietnam-2022">
+            Copyright © SystemEXE Vietnam 2022
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+</html>

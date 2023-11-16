@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./vars.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./dropdownNavigationBar.css" />
+
+    <style>
+      a,
+      button,
+      input,
+      select,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      * {
+        margin: 0;
+        padding: 0;
+        border: none;
+        text-decoration: none;
+        appearance: none;
+        background: none;
+
+        -webkit-font-smoothing: antialiased;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body onload="init()">
+    <div class="customer-master">
+      <div class="header">
+        <img class="logo-container" src="logo-container0.png" />
+        <div class="text-container">
+          <div class="warehouse">Warehouse</div>
+          <div class="dropdown-container">
+            <div class="dropdown">
+              <div class="exe-hcm-wh">EXE-HCM-WH</div>
+              <svg
+                class="arrow-down-icon"
+                width="16"
+                height="9"
+                viewBox="0 0 16 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.226756 0.340037C0.501612 0.0651815 0.931716 0.0401946 1.2348 0.265077L1.32163 0.340037L8 7.01806L14.6784 0.340037C14.9532 0.0651815 15.3833 0.0401946 15.6864 0.265077L15.7732 0.340037C16.0481 0.614893 16.0731 1.045 15.8482 1.34808L15.7732 1.43491L8.54744 8.66072C8.27258 8.93557 7.84248 8.96056 7.53939 8.73568L7.45256 8.66072L0.226756 1.43491C-0.0755853 1.13257 -0.0755853 0.642379 0.226756 0.340037Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="text-container2">
+          <div class="hello-admin">Hello, Admin</div>
+        </div>
+        <div class="text-container3">
+          <svg
+            class="logout"
+            width="30"
+            height="31"
+            viewBox="0 0 30 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_288_10640)">
+              <path
+                d="M8.75 9.25L10.5125 11.0125L7.2875 14.25H20V16.75H7.2875L10.5125 19.975L8.75 21.75L2.5 15.5L8.75 9.25ZM25 6.75H15V4.25H25C26.375 4.25 27.5 5.375 27.5 6.75V24.25C27.5 25.625 26.375 26.75 25 26.75H15V24.25H25V6.75Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_288_10640">
+                <rect
+                  width="30"
+                  height="30"
+                  fill="white"
+                  transform="matrix(-1 0 0 1 30 0.5)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <div class="log-out">Log out</div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="content">
+          <div class="navigation-bar">
+            <div class="tab-1">
+              <div class="dropdownBar">
+                <button class="dropbtn">Receiving
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdownBar-content">
+                  <a href="../ReceivingPlan/index.html">Receiving Plan</a>
+                  <a href="../ReceivingAcceptance/index.html">Acceptance</a>
+                  <a href="../ReceivingInspection/index.html">Receiving Inspection</a>
+                  <a href="../ReceivingStatusInquire/index.html">StatusInquiry</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-1">
+              <div class="dropdownBar">
+                <button class="dropbtn">Shipment
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdownBar-content">
+                  <a href="../ShipmentPlan/index.html">Shipment Plan</a>
+                  <a href="../ShipmentInstruction/index.html">Instruction</a>
+                  <a href="../ShipmentAllocation/index.html">Allocation</a>
+                  <a href="../ShipmentInspection/index.html">Shipment Inspection</a>
+                  <a href="../ShipmentStatusInquiry/index.html">Status Inquiry</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-1">
+              <div class="dropdownBar">
+                <button class="dropbtn">Inventory
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdownBar-content">
+                  <a href="../QuantityAdjustment/index.html">Quantity Adjustment</a>
+                  <a href="../LocationTransfer/index.html">Location Transfer</a>
+                  <a href="../StatusChange/index.html">Status Change</a>
+                  <a href="../StockInquiry/index.html">Stock Inquiry</a>
+                  <a href="../DetailsOfChangedHistory/index.html">Details of Changed History</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-1">
+              <div class="dropdownBar">
+                <button class="dropbtn">Stock-taking
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdownBar-content">
+                  <a href="../StartStockTaking/index.html">Start Stock-taking</a>
+                  <a href="../ModifyStockTaking/index.html">Modify Stock-taking</a>
+                  <a href="../CompleteStockTaking/index.html">Complete Stock-taking</a>
+                  <a href="../StockTakingOutput/index.html">Stock-taking Output</a>
+                </div>
+            </div>
+            </div>
+            <div class="tab-1">
+              <div class="dropdownBar">
+                <button class="dropbtn">Management
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdownBar-content">
+                  <a href="../ItemMaster/index.html">Item Master</a>
+                  <a href="../CustomerMaster/index.html">Customer Master</a>
+                  <a href="../ShipToMaster/index.html">Ship-To Master</a>
+                  <a href="../Import/index.html">Import</a>
+                  <a href="../Export/index.html">Export</a>
+                  <a href="../LocationMasterLocationMaster/">Location Masters</a>
+                  <a href="../LocationMasterZoneMaster/">Zone Master</a>
+                  <a href="../LocationMasterReceivingLocation/index.html">Receiving Location</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-1">
+              <div class="dropdownBar">
+                <button class="dropbtn">General Settings
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdownBar-content">
+                  <a href="../ProfileSetting/index.html">Profile Setting</a>
+                  <a href="../RegisterWarehouse/index.html">Register Warehouse</a>
+                  <a href="../User/index.html">User</a>
+                  <a href="../AccessAuthority/index.html">Access Authority</a>
+                  <a href="../Language/index.html">Language</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="title-bar">
+            <div class="title-container">
+              <div class="frame-14"></div>
+              <div class="text-contaier">
+                <div class="customer-master2">Customer Master</div>
+                <div class="pm-02-01">PM02_01</div>
+              </div>
+            </div>
+            <div class="text-container4">
+              <div class="customer-master3">Customer Master</div>
+              <div
+                class="registration-and-correction-of-customer-master-will-be-performed"
+              >
+                Registration and correction of customer master will be
+                performed.
+              </div>
+            </div>
+          </div>
+          <div class="sub-nav-bar-container">
+            <div class="content2">
+              <div class="sub-nav-bar">
+                <div class="menu-bar-list">[Menu bar list]</div>
+              </div>
+              <div class="sub-nav-bar">
+                <div class="register-customer-master">
+                  Register Customer Master
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="list-item">
+            <div class="item-container">
+              <div class="item">
+                <div class="header2">
+                  <svg
+                    class="icon-container"
+                    width="15"
+                    height="30"
+                    viewBox="0 0 15 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0 15C0 14.6022 0.0658481 14.2206 0.183058 13.9393C0.300269 13.658 0.45924 13.5 0.625 13.5H14.375C14.5408 13.5 14.6997 13.658 14.8169 13.9393C14.9342 14.2206 15 14.6022 15 15C15 15.3978 14.9342 15.7794 14.8169 16.0607C14.6997 16.342 14.5408 16.5 14.375 16.5H0.625C0.45924 16.5 0.300269 16.342 0.183058 16.0607C0.0658481 15.7794 0 15.3978 0 15Z"
+                      fill="#FF7001"
+                    />
+                  </svg>
+
+                  <div class="register-customer-master2">
+                    Register Customer Master
+                  </div>
+                  <div class="fm-02-01">[FM02_01]</div>
+                </div>
+                <div class="content3">
+                  <div class="form-item-blue">
+                    <div class="header3">
+                      <svg
+                        class="icon-container2"
+                        width="25"
+                        height="16"
+                        viewBox="0 0 25 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M5 8C5 7.60218 5.06585 7.22064 5.18306 6.93934C5.30027 6.65804 5.45924 6.5 5.625 6.5H19.375C19.5408 6.5 19.6997 6.65804 19.8169 6.93934C19.9342 7.22064 20 7.60218 20 8C20 8.39782 19.9342 8.77936 19.8169 9.06066C19.6997 9.34197 19.5408 9.5 19.375 9.5H5.625C5.45924 9.5 5.30027 9.34197 5.18306 9.06066C5.06585 8.77936 5 8.39782 5 8Z"
+                          fill="white"
+                        />
+                      </svg>
+
+                      <div class="add-customer-master">Add Customer Master</div>
+                      <div class="sm-02-011">[SM02_011]</div>
+                    </div>
+                    <div class="content4">
+                      <div class="body">
+                        <div class="form-item">
+                          <div class="header4">
+                            <svg
+                              class="icon-container2"
+                              width="30"
+                              height="15"
+                              viewBox="0 0 30 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M5 7.5C5 7.10218 5.06585 6.72064 5.18306 6.43934C5.30027 6.15804 5.45924 6 5.625 6H19.375C19.5408 6 19.6997 6.15804 19.8169 6.43934C19.9342 6.72064 20 7.10218 20 7.5C20 7.89782 19.9342 8.27936 19.8169 8.56066C19.6997 8.84197 19.5408 9 19.375 9H5.625C5.45924 9 5.30027 8.84197 5.18306 8.56066C5.06585 8.27936 5 7.89782 5 7.5Z"
+                                fill="black"
+                              />
+                            </svg>
+
+                            <div class="add-customer-master2">
+                              Add Customer Master
+                            </div>
+                          </div>
+                          <div class="body2">
+                            <div class="row">
+                              <div class="left">
+                                <div class="customer-category">
+                                  Customer Category
+                                </div>
+                                <div class="">*</div>
+                              </div>
+                              <div class="right2">
+                                <div class="dropdown-container2">
+                                  <div class="dropdown2">
+                                    <svg
+                                      class="arrow-down-icon2"
+                                      width="16"
+                                      height="10"
+                                      viewBox="0 0 16 10"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M0.226756 0.840037C0.501612 0.565181 0.931716 0.540195 1.2348 0.765077L1.32163 0.840037L8 7.51806L14.6784 0.840037C14.9532 0.565181 15.3833 0.540195 15.6864 0.765077L15.7732 0.840037C16.0481 1.11489 16.0731 1.545 15.8482 1.84808L15.7732 1.93491L8.54744 9.16072C8.27258 9.43557 7.84248 9.46056 7.53939 9.23568L7.45256 9.16072L0.226756 1.93491C-0.0755853 1.63257 -0.0755853 1.14238 0.226756 0.840037Z"
+                                        fill="black"
+                                      />
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row2">
+                              <div class="left2">
+                                <div class="customer-id">Customer ID</div>
+                                <div class="">*</div>
+                              </div>
+                              <div class="right3">
+                                <div class="right3">
+                                  <div class="input-container">
+                                    <div class="input"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row2">
+                              <div class="left2">
+                                <div class="customer-name">Customer Name</div>
+                                <div class="">*</div>
+                              </div>
+                              <div class="right3">
+                                <div class="right3">
+                                  <div class="input-container">
+                                    <div class="input2"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="space"></div>
+                        <div class="form-item2">
+                          <div class="header5">
+                            <svg
+                              class="icon-container3"
+                              width="30"
+                              height="15"
+                              viewBox="0 0 30 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M5 7.5C5 7.10218 5.06585 6.72064 5.18306 6.43934C5.30027 6.15804 5.45924 6 5.625 6H19.375C19.5408 6 19.6997 6.15804 19.8169 6.43934C19.9342 6.72064 20 7.10218 20 7.5C20 7.89782 19.9342 8.27936 19.8169 8.56066C19.6997 8.84197 19.5408 9 19.375 9H5.625C5.45924 9 5.30027 8.84197 5.18306 8.56066C5.06585 8.27936 5 7.89782 5 7.5Z"
+                                fill="black"
+                              />
+                            </svg>
+
+                            <div class="add-customer-master2">
+                              Add Customer Master
+                            </div>
+                          </div>
+                          <div class="body3">
+                            <div class="row">
+                              <div class="left3">
+                                <div class="zip-code">Zip Code</div>
+                              </div>
+                              <div class="right3">
+                                <div class="input3"></div>
+                              </div>
+                            </div>
+                            <div class="row2">
+                              <div class="left4">
+                                <div class="country">Country</div>
+                              </div>
+                              <div class="right3">
+                                <div class="dropdown-container2">
+                                  <div class="dropdown3">
+                                    <div class="viet-nam">VietNam</div>
+                                    <svg
+                                      class="arrow-down-icon3"
+                                      width="16"
+                                      height="10"
+                                      viewBox="0 0 16 10"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M0.226756 0.840037C0.501612 0.565181 0.931716 0.540195 1.2348 0.765077L1.32163 0.840037L8 7.51806L14.6784 0.840037C14.9532 0.565181 15.3833 0.540195 15.6864 0.765077L15.7732 0.840037C16.0481 1.11489 16.0731 1.545 15.8482 1.84808L15.7732 1.93491L8.54744 9.16072C8.27258 9.43557 7.84248 9.46056 7.53939 9.23568L7.45256 9.16072L0.226756 1.93491C-0.0755853 1.63257 -0.0755853 1.14238 0.226756 0.840037Z"
+                                        fill="#CBCBCB"
+                                      />
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="left3">
+                                <div class="city-state">City/State</div>
+                              </div>
+                              <div class="right3">
+                                <div class="input4"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="left3">
+                                <div class="address-1">Address 1</div>
+                              </div>
+                              <div class="right4">
+                                <div class="input5"></div>
+                              </div>
+                            </div>
+                            <div class="row2">
+                              <div class="left5">
+                                <div class="address-2">Address 2</div>
+                              </div>
+                              <div class="right4">
+                                <div class="input5"></div>
+                              </div>
+                            </div>
+                            <div class="row2">
+                              <div class="left5">
+                                <div class="address-3">Address 3</div>
+                              </div>
+                              <div class="right4">
+                                <div class="input5"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="left3">
+                                <div class="phone-no">Phone no.</div>
+                              </div>
+                              <div class="right3">
+                                <div class="input3"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="left3">
+                                <div class="fax-no">Fax no.</div>
+                              </div>
+                              <div class="right3">
+                                <div class="input3"></div>
+                              </div>
+                            </div>
+                            <div class="row2">
+                              <div class="left5">
+                                <div class="email">Email</div>
+                              </div>
+                              <div class="right4">
+                                <div class="input5"></div>
+                              </div>
+                            </div>
+                            <div class="row2">
+                              <div class="left5">
+                                <div class="web-url">Web URL</div>
+                              </div>
+                              <div class="right4">
+                                <div class="input5"></div>
+                              </div>
+                            </div>
+                            <div class="row2">
+                              <div class="left5">
+                                <div class="bto-b-task">BtoB Task</div>
+                              </div>
+                              <div class="right5">
+                                <div class="radio-button-1">
+                                  <svg
+                                    class="icon-radio-button"
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M10 16.25C13.4517 16.25 16.25 13.4517 16.25 10C16.25 6.54822 13.4517 3.75 10 3.75C6.54822 3.75 3.75 6.54822 3.75 10C3.75 13.4517 6.54822 16.25 10 16.25Z"
+                                      fill="#676767"
+                                    />
+                                    <path
+                                      d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5229 4.47715 20 10 20C15.5229 20 20 15.5229 20 10C20 4.47715 15.5229 0 10 0ZM1.25 10C1.25 5.16751 5.16751 1.25 10 1.25C14.8325 1.25 18.75 5.16751 18.75 10C18.75 14.8325 14.8325 18.75 10 18.75C5.16751 18.75 1.25 14.8325 1.25 10Z"
+                                      fill="#676767"
+                                    />
+                                  </svg>
+
+                                  <div class="bto-b">BtoB</div>
+                                </div>
+                              </div>
+                              <div class="right6">
+                                <div class="radio-button-1">
+                                  <svg
+                                    class="vector5"
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M10 0.75C4.89137 0.75 0.75 4.89137 0.75 10C0.75 15.1086 4.89137 19.25 10 19.25C15.1086 19.25 19.25 15.1086 19.25 10C19.25 4.89137 15.1086 0.75 10 0.75ZM0.5 10C0.5 4.75329 4.75329 0.5 10 0.5C15.2467 0.5 19.5 4.75329 19.5 10C19.5 15.2467 15.2467 19.5 10 19.5C4.75329 19.5 0.5 15.2467 0.5 10Z"
+                                      fill="#676767"
+                                      stroke="#676767"
+                                    />
+                                  </svg>
+
+                                  <div class="direct">Direct</div>
+                                </div>
+                              </div>
+                              <div class="right6">
+                                <div class="radio-button-1">
+                                  <svg
+                                    class="vector6"
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M10 0.75C4.89137 0.75 0.75 4.89137 0.75 10C0.75 15.1086 4.89137 19.25 10 19.25C15.1086 19.25 19.25 15.1086 19.25 10C19.25 4.89137 15.1086 0.75 10 0.75ZM0.5 10C0.5 4.75329 4.75329 0.5 10 0.5C15.2467 0.5 19.5 4.75329 19.5 10C19.5 15.2467 15.2467 19.5 10 19.5C4.75329 19.5 0.5 15.2467 0.5 10Z"
+                                      fill="#676767"
+                                      stroke="#676767"
+                                    />
+                                  </svg>
+
+                                  <div class="fc">FC</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="textcontainer">
+                          <div class="header6"></div>
+                          <div class="btn-container">
+                            <div class="btn">
+                              <div class="execute">Execute</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="space2"></div>
+                  <div class="form-item-blue">
+                    <div class="header3">
+                      <svg
+                        class="icon-container2"
+                        width="25"
+                        height="16"
+                        viewBox="0 0 25 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M5 8C5 7.60218 5.06585 7.22064 5.18306 6.93934C5.30027 6.65804 5.45924 6.5 5.625 6.5H19.375C19.5408 6.5 19.6997 6.65804 19.8169 6.93934C19.9342 7.22064 20 7.60218 20 8C20 8.39782 19.9342 8.77936 19.8169 9.06066C19.6997 9.34197 19.5408 9.5 19.375 9.5H5.625C5.45924 9.5 5.30027 9.34197 5.18306 9.06066C5.06585 8.77936 5 8.39782 5 8Z"
+                          fill="white"
+                        />
+                      </svg>
+
+                      <div class="modify-customer-master">
+                        Modify Customer Master
+                      </div>
+                      <div class="sm-02-012">[SM02_012]</div>
+                    </div>
+                    <div class="content4">
+                      <div class="body">
+                        <div class="form-item2">
+                          <div class="header7">
+                            <svg
+                              class="icon-container4"
+                              width="30"
+                              height="15"
+                              viewBox="0 0 30 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M5 7.5C5 7.10218 5.06585 6.72064 5.18306 6.43934C5.30027 6.15804 5.45924 6 5.625 6H19.375C19.5408 6 19.6997 6.15804 19.8169 6.43934C19.9342 6.72064 20 7.10218 20 7.5C20 7.89782 19.9342 8.27936 19.8169 8.56066C19.6997 8.84197 19.5408 9 19.375 9H5.625C5.45924 9 5.30027 8.84197 5.18306 8.56066C5.06585 8.27936 5 7.89782 5 7.5Z"
+                                fill="black"
+                              />
+                            </svg>
+
+                            <div class="easy-search">Easy search</div>
+                          </div>
+                          <div class="body4">
+                            <div class="row3">
+                              <div class="column">
+                                <div class="status">Status</div>
+                                <div class="2">:</div>
+                              </div>
+                              <div class="column2">
+                                <div class="col-1">
+                                  <div class="valid-customer">
+                                    Valid Customer
+                                  </div>
+                                </div>
+                                <div class="col-1">
+                                  <div class="invalid-customer">
+                                    Invalid Customer
+                                  </div>
+                                </div>
+                                <div class="col-1">
+                                  <div class="all-customer">All Customer</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="space2"></div>
+                        <div class="form-item3">
+                          <div class="header4">
+                            <svg
+                              class="icon-container5"
+                              width="30"
+                              height="15"
+                              viewBox="0 0 30 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M12.5 0C12.7486 0 12.9871 0.0987722 13.1629 0.274588C13.3387 0.450403 13.4375 0.68886 13.4375 0.9375V6.5625H19.0625C19.3111 6.5625 19.5496 6.66127 19.7254 6.83709C19.9012 7.0129 20 7.25136 20 7.5C20 7.74864 19.9012 7.9871 19.7254 8.16291C19.5496 8.33873 19.3111 8.4375 19.0625 8.4375H13.4375V14.0625C13.4375 14.3111 13.3387 14.5496 13.1629 14.7254C12.9871 14.9012 12.7486 15 12.5 15C12.2514 15 12.0129 14.9012 11.8371 14.7254C11.6613 14.5496 11.5625 14.3111 11.5625 14.0625V8.4375H5.9375C5.68886 8.4375 5.4504 8.33873 5.27459 8.16291C5.09877 7.9871 5 7.74864 5 7.5C5 7.25136 5.09877 7.0129 5.27459 6.83709C5.4504 6.66127 5.68886 6.5625 5.9375 6.5625H11.5625V0.9375C11.5625 0.68886 11.6613 0.450403 11.8371 0.274588C12.0129 0.0987722 12.2514 0 12.5 0Z"
+                                fill="black"
+                              />
+                            </svg>
+
+                            <div class="details-search">Details Search</div>
+                          </div>
+                        </div>
+                        <div class="textcontainer2">
+                          <div class="page-top">▲ Page Top</div>
+                        </div>
+                        <div class="table-item">
+                          <div class="header8">
+                            <div class="column-1"></div>
+                            <div class="column-2">
+                              <div class="customer-category2">
+                                Customer Category
+                              </div>
+                            </div>
+                            <div class="column-3">
+                              <div class="text-container5">
+                                <div class="customer-id2">Customer ID</div>
+                              </div>
+                            </div>
+                            <div class="column-4">
+                              <div class="text-container5">
+                                <div class="customer-name2">Customer Name</div>
+                              </div>
+                            </div>
+                            <div class="column-5">
+                              <div class="text-container5">
+                                <div class="zip-code2">Zip Code</div>
+                              </div>
+                            </div>
+                            <div class="column-6">
+                              <div class="text-container5">
+                                <div class="address-12">Address 1</div>
+                              </div>
+                            </div>
+                            <div class="column-7">
+                              <div class="text-container5">
+                                <div class="address-22">Address 2</div>
+                              </div>
+                            </div>
+                            <div class="column-8">
+                              <div class="text-container5">
+                                <div class="address-32">Address 3</div>
+                              </div>
+                            </div>
+                            <div class="column-9">
+                              <div class="text-container5">
+                                <div class="phone-no2">Phone no.</div>
+                              </div>
+                            </div>
+                            <div class="column-10">
+                              <div class="text-container5">
+                                <div class="fax-no2">Fax no.</div>
+                              </div>
+                            </div>
+                            <div class="column-11">
+                              <div class="text-container5">
+                                <div class="mail">Mail</div>
+                              </div>
+                            </div>
+                            <div class="column-12">
+                              <div class="text-container5">
+                                <div class="url">URL</div>
+                              </div>
+                            </div>
+                            <div class="column-13">
+                              <div class="text-container5">
+                                <div class="country2">Country</div>
+                              </div>
+                            </div>
+                            <div class="column-14">
+                              <div class="text-container5">
+                                <div class="city-state2">City / State</div>
+                              </div>
+                            </div>
+                            <div class="column-15">
+                              <div class="text-container5">
+                                <div class="unshippable-days">
+                                  Unshippable Days
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column-16">
+                              <div class="text-container5">
+                                <div class="lot-only">Lot Only</div>
+                              </div>
+                            </div>
+                            <div class="column-17">
+                              <div class="text-container5">
+                                <div
+                                  class="b-2-freight-code-of-delivery-slip-address"
+                                >
+                                  B2 Freight Code of Delivery Slip Address
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column-18">
+                              <div class="text-container5">
+                                <div
+                                  class="b-2-freight-category-code-of-delivery-slip-address"
+                                >
+                                  B2 Freight Category Code of Delivery Slip
+                                  Address
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column-19">
+                              <div class="text-container5">
+                                <div
+                                  class="b-2-freight-c-actual-discount-rate-control-no"
+                                >
+                                  B2 Freight CActual Discount Rate control No.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column-20">
+                              <div class="text-container5">
+                                <div class="sagawa-customer-code">
+                                  SAGAWA Customer Code
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column-21">
+                              <div class="text-container5">
+                                <div class="actual-discount-rate-1">
+                                  Actual Discount Rate 1
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column-22">
+                              <div class="text-container5">
+                                <div class="actual-discount-rate-2">
+                                  Actual Discount Rate 2
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column-23">
+                              <div class="text-container5">
+                                <div class="actual-discount-rate-3">
+                                  Actual Discount Rate 3
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column-24">
+                              <div class="text-container5">
+                                <div class="actual-discount-rate-4">
+                                  Actual Discount Rate 4
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column-25">
+                              <div class="text-container5">
+                                <div class="actual-discount-rate-5">
+                                  Actual Discount Rate 5
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column-26">
+                              <div class="text-container5">
+                                <div class="item-info-001">Item Info 001</div>
+                              </div>
+                            </div>
+                            <div class="column-27">
+                              <div class="text-container5">
+                                <div class="item-info-002">Item Info 002</div>
+                              </div>
+                            </div>
+                            <div class="column-28">
+                              <div class="text-container5">
+                                <div class="item-info-003">Item Info 003</div>
+                              </div>
+                            </div>
+                            <div class="column-29">
+                              <div class="text-container5">
+                                <div class="item-info-004">Item Info 004</div>
+                              </div>
+                            </div>
+                            <div class="column-30">
+                              <div class="text-container5">
+                                <div class="item-info-005">Item Info 005</div>
+                              </div>
+                            </div>
+                            <div class="column-31">
+                              <div class="text-container5">
+                                <div class="item-info-006">Item Info 006</div>
+                              </div>
+                            </div>
+                            <div class="column-32">
+                              <div class="text-container5">
+                                <div class="item-info-007">Item Info 007</div>
+                              </div>
+                            </div>
+                            <div class="column-33">
+                              <div class="text-container5">
+                                <div class="item-info-008">Item Info 008</div>
+                              </div>
+                            </div>
+                            <div class="column-34">
+                              <div class="text-container5">
+                                <div class="item-info-009">Item Info 009</div>
+                              </div>
+                            </div>
+                            <div class="column-35">
+                              <div class="text-container5">
+                                <div class="item-info-010">Item Info 010</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="body5">
+                            <div class="row4">
+                              <div class="column-110">
+                                <div class="btn-container2">
+                                  <div class="edit">Edit</div>
+                                </div>
+                              </div>
+                              <div class="column-210">
+                                <div class="btn-container3">
+                                  <div class="receiving2">Receiving</div>
+                                </div>
+                              </div>
+                              <div class="column-36">
+                                <div class="text-container5">
+                                  <div class="cusdemo-001">CUSDEMO001</div>
+                                </div>
+                              </div>
+                              <div class="column-42">
+                                <div class="text-container5">
+                                  <div class="cusdemo-001">CUSDEMO001</div>
+                                </div>
+                              </div>
+                              <div class="column-52"></div>
+                              <div class="column-62"></div>
+                              <div class="column-72"></div>
+                              <div class="column-82"></div>
+                              <div class="column-92"></div>
+                              <div class="column-102"></div>
+                              <div class="column-112">
+                                <div class="text-container5">
+                                  <div class="abc-gmail-com">abc@gmail.com</div>
+                                </div>
+                              </div>
+                              <div class="column-122">
+                                <div class="text-container5"></div>
+                              </div>
+                              <div class="column-132"></div>
+                              <div class="column-142"></div>
+                              <div class="column-152">
+                                <div class="text-container5">
+                                  <div class="_0">0</div>
+                                </div>
+                              </div>
+                              <div class="column-162">
+                                <div class="text-container5">
+                                  <div class="no">No</div>
+                                </div>
+                              </div>
+                              <div class="column-172"></div>
+                              <div class="column-182"></div>
+                              <div class="column-192"></div>
+                              <div class="column-202"></div>
+                              <div class="column-212">
+                                <div class="text-container5">
+                                  <div class="_100">100</div>
+                                </div>
+                              </div>
+                              <div class="column-222">
+                                <div class="text-container5">
+                                  <div class="_100">100</div>
+                                </div>
+                              </div>
+                              <div class="column-232">
+                                <div class="text-container5">
+                                  <div class="_100">100</div>
+                                </div>
+                              </div>
+                              <div class="column-242">
+                                <div class="text-container5">
+                                  <div class="_100">100</div>
+                                </div>
+                              </div>
+                              <div class="column-252">
+                                <div class="text-container5">
+                                  <div class="_100">100</div>
+                                </div>
+                              </div>
+                              <div class="column-262"></div>
+                              <div class="column-272"></div>
+                              <div class="column-282"></div>
+                              <div class="column-292"></div>
+                              <div class="column-302"></div>
+                              <div class="column-312"></div>
+                              <div class="column-322"></div>
+                              <div class="column-332"></div>
+                              <div class="column-342">
+                                <div class="text-container5"></div>
+                              </div>
+                              <div class="column-352"></div>
+                            </div>
+                            <div class="row4">
+                              <div class="column-110">
+                                <div class="btn-container2">
+                                  <div class="edit">Edit</div>
+                                </div>
+                              </div>
+                              <div class="column-210">
+                                <div class="btn-container3">
+                                  <div class="receiving2">Receiving</div>
+                                </div>
+                              </div>
+                              <div class="column-36">
+                                <div class="text-container5">
+                                  <div class="cusdemo-001">CUSDEMO001</div>
+                                </div>
+                              </div>
+                              <div class="column-42">
+                                <div class="text-container5">
+                                  <div class="cusdemo-001">CUSDEMO001</div>
+                                </div>
+                              </div>
+                              <div class="column-52"></div>
+                              <div class="column-62"></div>
+                              <div class="column-72"></div>
+                              <div class="column-82"></div>
+                              <div class="column-92"></div>
+                              <div class="column-102"></div>
+                              <div class="column-112">
+                                <div class="text-container5">
+                                  <div class="abc-gmail-com">abc@gmail.com</div>
+                                </div>
+                              </div>
+                              <div class="column-122">
+                                <div class="text-container5"></div>
+                              </div>
+                              <div class="column-132"></div>
+                              <div class="column-142"></div>
+                              <div class="column-152">
+                                <div class="text-container5">
+                                  <div class="_0">0</div>
+                                </div>
+                              </div>
+                              <div class="column-162">
+                                <div class="text-container5">
+                                  <div class="no">No</div>
+                                </div>
+                              </div>
+                              <div class="column-172"></div>
+                              <div class="column-182"></div>
+                              <div class="column-192"></div>
+                              <div class="column-202"></div>
+                              <div class="column-212">
+                                <div class="text-container5">
+                                  <div class="_100">100</div>
+                                </div>
+                              </div>
+                              <div class="column-222">
+                                <div class="text-container5">
+                                  <div class="_100">100</div>
+                                </div>
+                              </div>
+                              <div class="column-232">
+                                <div class="text-container5">
+                                  <div class="_100">100</div>
+                                </div>
+                              </div>
+                              <div class="column-242">
+                                <div class="text-container5">
+                                  <div class="_100">100</div>
+                                </div>
+                              </div>
+                              <div class="column-252">
+                                <div class="text-container5">
+                                  <div class="_100">100</div>
+                                </div>
+                              </div>
+                              <div class="column-262"></div>
+                              <div class="column-272"></div>
+                              <div class="column-282"></div>
+                              <div class="column-292"></div>
+                              <div class="column-302"></div>
+                              <div class="column-312"></div>
+                              <div class="column-322"></div>
+                              <div class="column-332"></div>
+                              <div class="column-342">
+                                <div class="text-container5"></div>
+                              </div>
+                              <div class="column-352"></div>
+                            </div>
+                            <div class="row4">
+                              <div class="column-110">
+                                <div class="btn-container2">
+                                  <div class="edit">Edit</div>
+                                </div>
+                              </div>
+                              <div class="column-210">
+                                <div class="btn-container3">
+                                  <div class="receiving2">Receiving</div>
+                                </div>
+                              </div>
+                              <div class="column-36">
+                                <div class="text-container5">
+                                  <div class="cusdemo-001">CUSDEMO001</div>
+                                </div>
+                              </div>
+                              <div class="column-42">
+                                <div class="text-container5">
+                                  <div class="cusdemo-001">CUSDEMO001</div>
+                                </div>
+                              </div>
+                              <div class="column-52"></div>
+                              <div class="column-62"></div>
+                              <div class="column-72"></div>
+                              <div class="column-82"></div>
+                              <div class="column-92"></div>
+                              <div class="column-102"></div>
+                              <div class="column-112">
+                                <div class="text-container5">
+                                  <div class="abc-gmail-com">abc@gmail.com</div>
+                                </div>
+                              </div>
+                              <div class="column-122">
+                                <div class="text-container5"></div>
+                              </div>
+                              <div class="column-132"></div>
+                              <div class="column-142"></div>
+                              <div class="column-152">
+                                <div class="text-container5">
+                                  <div class="_0">0</div>
+                                </div>
+                              </div>
+                              <div class="column-162">
+                                <div class="text-container5">
+                                  <div class="no">No</div>
+                                </div>
+                              </div>
+                              <div class="column-172"></div>
+                              <div class="column-182"></div>
+                              <div class="column-192"></div>
+                              <div class="column-202"></div>
+                              <div class="column-212">
+                                <div class="text-container5">
+                                  <div class="_100">100</div>
+                                </div>
+                              </div>
+                              <div class="column-222">
+                                <div class="text-container5">
+                                  <div class="_100">100</div>
+                                </div>
+                              </div>
+                              <div class="column-232">
+                                <div class="text-container5">
+                                  <div class="_100">100</div>
+                                </div>
+                              </div>
+                              <div class="column-242">
+                                <div class="text-container5">
+                                  <div class="_100">100</div>
+                                </div>
+                              </div>
+                              <div class="column-252">
+                                <div class="text-container5">
+                                  <div class="_100">100</div>
+                                </div>
+                              </div>
+                              <div class="column-262"></div>
+                              <div class="column-272"></div>
+                              <div class="column-282"></div>
+                              <div class="column-292"></div>
+                              <div class="column-302"></div>
+                              <div class="column-312"></div>
+                              <div class="column-322"></div>
+                              <div class="column-332"></div>
+                              <div class="column-342">
+                                <div class="text-container5"></div>
+                              </div>
+                              <div class="column-352"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="paging">
+                          <div class="bg">
+                            <div class="line-1"></div>
+                            <svg
+                              class="container"
+                              width="1085"
+                              height="20"
+                              viewBox="0 0 1085 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <line
+                                y1="19.5"
+                                x2="1085"
+                                y2="19.5"
+                                stroke="#A5A5A5"
+                              />
+                            </svg>
+
+                            <div class="line-3"></div>
+                          </div>
+                          <div class="list-number">
+                            <div class="page-container">
+                              <div class="selected">
+                                <div class="_1">1</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="text">
+                            <div class="text-container6">
+                              <div class="records-from-1-to-1-of-1">
+                                Records from 1 to 3 of 3
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="textcontainer2">
+                          <div class="page-top">▲ Page Top</div>
+                        </div>
+                        <div class="form-item3">
+                          <div class="header4">
+                            <svg
+                              class="icon-container6"
+                              width="30"
+                              height="15"
+                              viewBox="0 0 30 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M12.5 0C12.7486 0 12.9871 0.0987722 13.1629 0.274588C13.3387 0.450403 13.4375 0.68886 13.4375 0.9375V6.5625H19.0625C19.3111 6.5625 19.5496 6.66127 19.7254 6.83709C19.9012 7.0129 20 7.25136 20 7.5C20 7.74864 19.9012 7.9871 19.7254 8.16291C19.5496 8.33873 19.3111 8.4375 19.0625 8.4375H13.4375V14.0625C13.4375 14.3111 13.3387 14.5496 13.1629 14.7254C12.9871 14.9012 12.7486 15 12.5 15C12.2514 15 12.0129 14.9012 11.8371 14.7254C11.6613 14.5496 11.5625 14.3111 11.5625 14.0625V8.4375H5.9375C5.68886 8.4375 5.4504 8.33873 5.27459 8.16291C5.09877 7.9871 5 7.74864 5 7.5C5 7.25136 5.09877 7.0129 5.27459 6.83709C5.4504 6.66127 5.68886 6.5625 5.9375 6.5625H11.5625V0.9375C11.5625 0.68886 11.6613 0.450403 11.8371 0.274588C12.0129 0.0987722 12.2514 0 12.5 0Z"
+                                fill="black"
+                              />
+                            </svg>
+
+                            <div class="modify-customer-master2">
+                              Modify Customer Master
+                            </div>
+                          </div>
+                        </div>
+                        <div class="space3"></div>
+                        <div class="form-item3">
+                          <div class="header4">
+                            <svg
+                              class="icon-container7"
+                              width="30"
+                              height="15"
+                              viewBox="0 0 30 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M12.5 0C12.7486 0 12.9871 0.0987722 13.1629 0.274588C13.3387 0.450403 13.4375 0.68886 13.4375 0.9375V6.5625H19.0625C19.3111 6.5625 19.5496 6.66127 19.7254 6.83709C19.9012 7.0129 20 7.25136 20 7.5C20 7.74864 19.9012 7.9871 19.7254 8.16291C19.5496 8.33873 19.3111 8.4375 19.0625 8.4375H13.4375V14.0625C13.4375 14.3111 13.3387 14.5496 13.1629 14.7254C12.9871 14.9012 12.7486 15 12.5 15C12.2514 15 12.0129 14.9012 11.8371 14.7254C11.6613 14.5496 11.5625 14.3111 11.5625 14.0625V8.4375H5.9375C5.68886 8.4375 5.4504 8.33873 5.27459 8.16291C5.09877 7.9871 5 7.74864 5 7.5C5 7.25136 5.09877 7.0129 5.27459 6.83709C5.4504 6.66127 5.68886 6.5625 5.9375 6.5625H11.5625V0.9375C11.5625 0.68886 11.6613 0.450403 11.8371 0.274588C12.0129 0.0987722 12.2514 0 12.5 0Z"
+                                fill="black"
+                              />
+                            </svg>
+
+                            <div class="modify-customer-master3">
+                              Modify Customer Master
+                            </div>
+                          </div>
+                        </div>
+                        <div class="textcontainer2">
+                          <div class="page-top">▲ Page Top</div>
+                        </div>
+                        <div class="textcontainer">
+                          <div class="header9">
+                            <div class="text-container7">
+                              <div
+                                class="select-operation-and-click-execute-button"
+                              >
+                                Select operation and click execute button
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row5">
+                            <div class="text-container8">
+                              <svg
+                                class="radio-icon"
+                                width="20"
+                                height="21"
+                                viewBox="0 0 20 21"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10 15.5C8.67392 15.5 7.40215 14.9732 6.46447 14.0355C5.52678 13.0979 5 11.8261 5 10.5C5 9.17392 5.52678 7.90215 6.46447 6.96447C7.40215 6.02678 8.67392 5.5 10 5.5C11.3261 5.5 12.5979 6.02678 13.5355 6.96447C14.4732 7.90215 15 9.17392 15 10.5C15 11.8261 14.4732 13.0979 13.5355 14.0355C12.5979 14.9732 11.3261 15.5 10 15.5ZM10 16.75C11.6576 16.75 13.2473 16.0915 14.4194 14.9194C15.5915 13.7473 16.25 12.1576 16.25 10.5C16.25 8.8424 15.5915 7.25269 14.4194 6.08058C13.2473 4.90848 11.6576 4.25 10 4.25C8.3424 4.25 6.75269 4.90848 5.58058 6.08058C4.40848 7.25269 3.75 8.8424 3.75 10.5C3.75 12.1576 4.40848 13.7473 5.58058 14.9194C6.75269 16.0915 8.3424 16.75 10 16.75Z"
+                                  fill="#7C7C7C"
+                                />
+                                <path
+                                  d="M12.5 10.5C12.5 11.163 12.2366 11.7989 11.7678 12.2678C11.2989 12.7366 10.663 13 10 13C9.33696 13 8.70107 12.7366 8.23223 12.2678C7.76339 11.7989 7.5 11.163 7.5 10.5C7.5 9.83696 7.76339 9.20107 8.23223 8.73223C8.70107 8.26339 9.33696 8 10 8C10.663 8 11.2989 8.26339 11.7678 8.73223C12.2366 9.20107 12.5 9.83696 12.5 10.5Z"
+                                  fill="#7C7C7C"
+                                />
+                              </svg>
+
+                              <div class="register-edited-information">
+                                Register edited information.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="btn-container">
+                            <div class="btn">
+                              <div class="execute">Execute</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="textcontainer2">
+                          <div class="page-top">▲ Page Top</div>
+                        </div>
+                        <div class="textcontainer2">
+                          <div class="return-to-correct-customer-master">
+                            ▲ Return to correct customer master.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="textcontainer3">
+                    <div class="text-container9">
+                      <div class="help-register-customer-master">
+                        Help [Register Customer Master]
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="copyright-system-exe-vietnam-2022">
+            Copyright © SystemEXE Vietnam 2022
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+</html>
