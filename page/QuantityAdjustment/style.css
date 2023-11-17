@@ -2607,7 +2607,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  /* width: 1300px; */
+  width: 1300px;
   height: 20px;
   position: relative;
   overflow: hidden;

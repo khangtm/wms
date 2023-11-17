@@ -5,9 +5,6 @@ function init(){
 
 var coll = Array.from(document.getElementsByClassName("header2"))
             .concat(Array.from(document.getElementsByClassName("header3")))
-            .concat(Array.from(document.getElementsByClassName("header4")))
-            .concat(Array.from(document.getElementsByClassName("header6")))
-            .concat(Array.from(document.getElementsByClassName("header8")))
 var i;
 
 for (i = 0; i < coll.length; i++) {

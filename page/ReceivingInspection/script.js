@@ -7,8 +7,13 @@ function onClickDetail(target){
     let inspectionDetailHeader = document.getElementsByClassName("inspection-details-header")[0];
     let inspectionDetailInside = document.getElementsByClassName("inspection-details-inside-header")[0];
 
-    inspectionDetailHeader.click();
-    inspectionDetailInside.click();
+    if(inspectionDetailHeader.className.includes("active")){
+        inspectionDetailHeader.click();
+    }
+    if(inspectionDetailInside.className.includes("active")){
+        inspectionDetailInside.click();
+    }
+    
 
     let receivingNo = target.parentNode.nextElementSibling.nextElementSibling;
     let plannedDate = receivingNo.nextElementSibling;
