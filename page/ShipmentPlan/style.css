@@ -14,6 +14,9 @@
   position: relative;
   overflow: hidden;
 }
+.required-icon-color {
+  color: #ff7001
+}
 .header {
   background: #e7e6e6;
   padding: 0px 10px 0px 10px;
@@ -172,11 +175,10 @@
   width: 1200px;
   height: 60px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 .tab-1 {
   background: #f0f0f0;
-  /* padding: 0px 5px 0px 5px; */
   display: flex;
   flex-direction: row;
   gap: 5px;
@@ -185,7 +187,7 @@
   align-self: stretch;
   flex: 1;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 .receiving {
   color: #7c7c7c;
@@ -359,6 +361,7 @@
   text-align: left;
   font: var(--normal, 400 15px "Inter-Regular", sans-serif);
   position: relative;
+  text-decoration: underline;
 }
 .bto-b {
   color: #000000;
@@ -371,6 +374,7 @@
   text-align: left;
   font: var(--normal, 400 15px "Inter-Regular", sans-serif);
   position: relative;
+  text-decoration: underline;
 }
 .list-item {
   display: flex;
@@ -2992,13 +2996,14 @@
   flex-shrink: 0;
   width: 140px;
   position: relative;
+  overflow: hidden;
 }
 .bto-b-customer {
   color: #000000;
   text-align: left;
   font: 400 14px "Inter-Regular", sans-serif;
   position: relative;
-  width: 105px;
+  width: 140px;
 }
 .column-85 {
   border-style: solid;
@@ -3050,7 +3055,7 @@
   flex-shrink: 0;
   width: 20px;
   height: 0px;
-  position: relative;
+  position: absolute;
   transform-origin: 0 0;
   transform: rotate(-90deg) scale(1, 1);
 }
@@ -4412,7 +4417,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 1440px;
+  width: 1300px;
   height: 20px;
   position: relative;
   overflow: hidden;

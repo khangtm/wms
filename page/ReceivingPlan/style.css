@@ -170,11 +170,10 @@
   width: 1200px;
   height: 60px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 .tab-1 {
   background: #f0f0f0;
-  /* padding: 0px 5px 0px 5px; */
   display: flex;
   flex-direction: row;
   gap: 5px;
@@ -183,7 +182,7 @@
   align-self: stretch;
   flex: 1;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 .receiving {
   color: #7c7c7c;
@@ -509,13 +508,13 @@
   overflow: hidden;
 }
 .left {
-  padding: 0px 5px 0px 5px;
+
   display: flex;
   flex-direction: row;
   gap: 0px;
   align-items: center;
   justify-content: flex-start;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   flex-shrink: 0;
   width: 100px;
   height: 45px;
@@ -526,7 +525,7 @@
   text-align: left;
   font: 400 15px "Inter-Regular", sans-serif;
   position: relative;
-  width: 100px;
+  width: 80px;
 }
 /* . {
   color: #ff7001;
@@ -582,7 +581,7 @@
   overflow: visible;
 }
 .left2 {
-  padding: 0px 5px 0px 5px;
+
   display: flex;
   flex-direction: row;
   gap: 0px;
@@ -618,16 +617,17 @@
   flex-shrink: 0;
   position: relative;
   overflow: hidden;
+  width: 150px;
 }
 .dropdown2 {
   background: #ffffff;
   border-style: solid;
   border-color: #000000;
   border-width: 1px;
-  padding: 10px 3px 10px 3px;
+  padding: 0px 2px;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  /* gap: 10px; */
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
@@ -736,7 +736,7 @@
   overflow: hidden;
 }
 .left4 {
-  padding: 0px 20px 0px 5px;
+  /* padding: 0px 20px 0px 5px; */
   display: flex;
   flex-direction: row;
   gap: 0px;
@@ -3202,4 +3202,8 @@
   flex-shrink: 0;
   width: 240px;
   position: relative;
+}
+
+.input1{
+  width: 100%;
 }

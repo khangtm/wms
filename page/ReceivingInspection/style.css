@@ -157,11 +157,10 @@
   width: 1200px;
   height: 60px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 .tab-1 {
   background: #f0f0f0;
-  /* padding: 0px 5px 0px 5px; */
   display: flex;
   flex-direction: row;
   gap: 5px;
@@ -170,7 +169,7 @@
   align-self: stretch;
   flex: 1;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 .receiving {
   color: #7c7c7c;
@@ -746,7 +745,6 @@
 }
 
 .detail-search-content{
-  display: none;
   flex-direction: column;
 }
 
@@ -2504,7 +2502,6 @@
 
 .inspection-details-content {
   background: #87cefa;
-  display: none;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
@@ -2845,6 +2842,7 @@
   height: 345px;
   position: relative;
   overflow-x: auto;
+  overflow-y: hidden;
 }
 .column-13 {
   background: #3a3a3a;
@@ -2875,7 +2873,7 @@
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
-  width: 50px;
+  width: 80px;
   position: relative;
 }
 .column-33 {
@@ -2907,7 +2905,7 @@
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
-  width: 50px;
+  width: 110px;
   position: relative;
 }
 .column-53 {
@@ -3620,4 +3618,15 @@
   text-align: left;
   font: 500 13px "Inter-Medium", sans-serif;
   position: relative;
+}
+
+.bgMoccasin{
+  background-color: moccasin;
+  color: black;
+}
+.bgMoccasin div{
+  color: black;
+}
+.bgMoccasin div div{
+  color: black;
 }

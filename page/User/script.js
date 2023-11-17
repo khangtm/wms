@@ -16,7 +16,14 @@ function createInitDataTable(){
 
     childs = Array.from(tableBody[1].childNodes).filter((e) => e.className?.includes("row6"));
     childs.map((child, index) => {
-        child.childNodes[5].innerHTML = `<div class="system-exe-company">Warehouse ` + (index + 1) + `</div>`
+        if(index == 0) {
+            child.childNodes[5].innerHTML = `<div class="system-exe-company">External </div>`
+        } 
+        else if(index == 1) {
+            child.childNodes[5].innerHTML = `<div class="system-exe-company">Internal </div>`
+        } else {
+            child.childNodes[5].innerHTML = `<div class="system-exe-company">Warehouse ` + (index -1) + `</div>`
+        }
     })
 }
 

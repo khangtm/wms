@@ -168,7 +168,7 @@
   width: 1200px;
   height: 60px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 .tab-1 {
   background: #f0f0f0;
@@ -180,7 +180,7 @@
   align-self: stretch;
   flex: 1;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 .receiving {
   color: #7c7c7c;
@@ -515,10 +515,10 @@
   border-style: solid;
   border-color: var(--black, #000000);
   border-width: 1px;
-  padding: 10px 3px 10px 3px;
+  padding: 10px 3px 10px 0px;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 0px;
   align-items: center;
   justify-content: flex-end;
   flex-shrink: 0;
@@ -526,6 +526,11 @@
   height: 20px;
   position: relative;
   overflow: hidden;
+}
+.language-dropdown {
+  width: 150px;
+  height: 20px;
+  padding-left: 3px;
 }
 .english {
   color: var(--black, #000000);

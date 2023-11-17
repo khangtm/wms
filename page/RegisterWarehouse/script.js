@@ -10,7 +10,15 @@ function createInitDataTable(){
     let childs = Array.from(tableBody.childNodes).filter((e) => e.className?.includes("row8"));
     childs.map((child, index) => {
         child.childNodes[5].innerHTML = `<div class="text-container7"><div class="_1">` + (index + 1) + `</div></div>`
-        child.childNodes[7].innerHTML = `<div class="system-exe-company">Warehouse ` + (index + 1) + `</div>`
+        if(index == 0 ){
+            child.childNodes[7].innerHTML = `<div class="system-exe-company">External</div>`
+        }else if(index == 1){
+            child.childNodes[7].innerHTML = `<div class="system-exe-company">Internal</div>`
+        }
+        else{
+            child.childNodes[7].innerHTML = `<div class="system-exe-company">Warehouse ` + (index + 1) + `</div>`
+        }
+        
     })
 }
 

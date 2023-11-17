@@ -171,11 +171,10 @@
   width: 1200px;
   height: 60px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 .tab-1 {
   background: #f0f0f0;
-  /* padding: 0px 5px 0px 5px; */
   display: flex;
   flex-direction: row;
   gap: 5px;
@@ -184,7 +183,7 @@
   align-self: stretch;
   flex: 1;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 .receiving {
   color: #7c7c7c;
@@ -2539,6 +2538,7 @@
   height: 483px;
   position: relative;
   overflow-x: auto;
+  overflow-y: hidden;
 }
 .body5 {
   display: flex;
@@ -2564,7 +2564,7 @@
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
-  width: 140px;
+  width: 150px;
   position: relative;
 }
 .search-name-2 {
@@ -2693,7 +2693,7 @@
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
-  width: 140px;
+  width: 150px;
   position: relative;
 }
 .period-fluctuation {

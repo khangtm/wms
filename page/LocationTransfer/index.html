@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./vars.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./dropdownNavigationBar.css" />
+    <link rel="stylesheet" href="../Common/common.css" />
 
     <style>
       a,
@@ -31,7 +31,7 @@
     </style>
     <title>Document</title>
   </head>
-  <body>
+  <body onload="init()">
     <div class="inventory-location-transfer">
       <div class="header">
         <a href="../../index.html"><img class="logo-container" src="logo-container0.png" /></a>
@@ -39,7 +39,7 @@
           <div class="warehouse">Warehouse</div>
           <div class="dropdown-container">
             <div class="dropdown">
-              <div class="exe-hcm-wh">EXE-HCM-WH</div>
+              <div class="exe-hcm-wh">Internal</div>
               <svg
                 class="arrow-down-icon"
                 width="16"
@@ -157,8 +157,8 @@
                   <a href="../ShipToMaster/index.html">Ship-To Master</a>
                   <a href="../Import/index.html">Import</a>
                   <a href="../Export/index.html">Export</a>
-                  <a href="../LocationMasterLocationMaster/">Location Masters</a>
-                  <a href="../LocationMasterZoneMaster/">Zone Master</a>
+                  <a href="../LocationMasterLocationMaster/index.html">Location Masters</a>
+                  <a href="../LocationMasterZoneMaster/index.html">Zone Master</a>
                   <a href="../LocationMasterReceivingLocation/index.html">Receiving Location</a>
                 </div>
               </div>
@@ -272,7 +272,7 @@
                   </div>
                   <div class="textcontainer"></div>
                   <div class="form-item">
-                    <div class="header3">
+                    <div class="header3 initHidden">
                       <svg
                         class="icon-container3"
                         width="30"
@@ -770,7 +770,7 @@
                         </div>
                         <div class="column-42">
                           <div class="text-container8">
-                            <div class="_001-001-02">001-001-02</div>
+                            <div class="_001-001-02">001-001-03</div>
                           </div>
                         </div>
                         <div class="column-52">
@@ -792,12 +792,12 @@
                         </div>
                         <div class="column-102">
                           <div class="text-container8">
-                            <div class="_202305001">202305001</div>
+                            <div class="_202305001">202306001</div>
                           </div>
                         </div>
                         <div class="column-112">
                           <div class="text-container8">
-                            <div class="_05-2025">05/2025</div>
+                            <div class="_05-2025">06/2025</div>
                           </div>
                         </div>
                         <div class="column-122">
@@ -841,7 +841,7 @@
                         </div>
                         <div class="column-42">
                           <div class="text-container8">
-                            <div class="_001-001-02">001-001-02</div>
+                            <div class="_001-001-02">001-001-04</div>
                           </div>
                         </div>
                         <div class="column-52">
@@ -863,7 +863,7 @@
                         </div>
                         <div class="column-102">
                           <div class="text-container8">
-                            <div class="_202305001">202305001</div>
+                            <div class="_202305001">202305010</div>
                           </div>
                         </div>
                         <div class="column-112">
@@ -920,7 +920,7 @@
             </div>
             <div class="item-container">
               <div class="item">
-                <div class="header2">
+                <div class="header2 initHidden">
                   <svg
                     class="icon-container4"
                     width="15"
@@ -1120,6 +1120,100 @@
                           <div class="text-container8"></div>
                         </div>
                       </div>
+                      <div class="row5">
+                        <div class="column-19"></div>
+                        <div class="column-24"></div>
+                        <div class="column-32">
+                          <div class="text-container8">
+                            <div class="a">A</div>
+                          </div>
+                        </div>
+                        <div class="column-42">
+                          <div class="text-container8">
+                            <div class="_001-001-02">001-001-03</div>
+                          </div>
+                        </div>
+                        <div class="column-54"></div>
+                        <div class="column-62"></div>
+                        <div class="column-74">
+                          <div class="text-container8">
+                            <div class="demo-888">DEMO888</div>
+                          </div>
+                        </div>
+                        <div class="column-84">
+                          <div class="text-container8">
+                            <div class="demo-serial-no">Demo Serial No</div>
+                          </div>
+                        </div>
+                        <div class="column-94">
+                          <div class="text-container8">
+                            <div class="_202305001">202306001</div>
+                          </div>
+                        </div>
+                        <div class="column-104">
+                          <div class="text-container8">
+                            <div class="_05-2025">06/2025</div>
+                          </div>
+                        </div>
+                        <div class="column-114">
+                          <div class="text-container8"></div>
+                        </div>
+                        <div class="column-124">
+                          <div class="text-container8">
+                            <div class="">Ｂ品</div>
+                          </div>
+                        </div>
+                        <div class="column-134">
+                          <div class="text-container8"></div>
+                        </div>
+                      </div>
+                      <div class="row5">
+                        <div class="column-19"></div>
+                        <div class="column-24"></div>
+                        <div class="column-32">
+                          <div class="text-container8">
+                            <div class="a">A</div>
+                          </div>
+                        </div>
+                        <div class="column-42">
+                          <div class="text-container8">
+                            <div class="_001-001-02">001-001-05</div>
+                          </div>
+                        </div>
+                        <div class="column-54"></div>
+                        <div class="column-62"></div>
+                        <div class="column-74">
+                          <div class="text-container8">
+                            <div class="demo-888">DEMO888</div>
+                          </div>
+                        </div>
+                        <div class="column-84">
+                          <div class="text-container8">
+                            <div class="demo-serial-no">Demo Serial No</div>
+                          </div>
+                        </div>
+                        <div class="column-94">
+                          <div class="text-container8">
+                            <div class="_202305001">202305010</div>
+                          </div>
+                        </div>
+                        <div class="column-104">
+                          <div class="text-container8">
+                            <div class="_05-2025">05/2025</div>
+                          </div>
+                        </div>
+                        <div class="column-114">
+                          <div class="text-container8"></div>
+                        </div>
+                        <div class="column-124">
+                          <div class="text-container8">
+                            <div class="">Ｂ品</div>
+                          </div>
+                        </div>
+                        <div class="column-134">
+                          <div class="text-container8"></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="paging">
@@ -1183,4 +1277,5 @@
     </div>
   </body>
   <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="../Common/common.js"></script>
 </html>

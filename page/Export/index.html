@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./vars.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./dropdownNavigationBar.css" />
+    <link rel="stylesheet" href="../Common/common.css" />
 
     <style>
       a,
@@ -31,7 +31,7 @@
     </style>
     <title>Document</title>
   </head>
-  <body>
+  <body onload="init()">
     <div class="export">
       <div class="header">
         <img class="logo-container" src="logo-container0.png" />
@@ -39,7 +39,7 @@
           <div class="warehouse">Warehouse</div>
           <div class="dropdown-container">
             <div class="dropdown">
-              <div class="exe-hcm-wh">EXE-HCM-WH</div>
+              <div class="exe-hcm-wh">Internal</div>
               <svg
                 class="arrow-down-icon"
                 width="16"
@@ -157,8 +157,8 @@
                   <a href="../ShipToMaster/index.html">Ship-To Master</a>
                   <a href="../Import/index.html">Import</a>
                   <a href="../Export/index.html">Export</a>
-                  <a href="../LocationMasterLocationMaster/">Location Masters</a>
-                  <a href="../LocationMasterZoneMaster/">Zone Master</a>
+                  <a href="../LocationMasterLocationMaster/index.html">Location Masters</a>
+                  <a href="../LocationMasterZoneMaster/index.html">Zone Master</a>
                   <a href="../LocationMasterReceivingLocation/index.html">Receiving Location</a>
                 </div>
               </div>
@@ -200,28 +200,6 @@
                 <div class="text-input">
                   <div class="export3">Export</div>
                 </div>
-                <div class="text-input">
-                  <div class="register-export-pattern">
-                    Register Export Pattern
-                  </div>
-                </div>
-                <div class="text-input">
-                  <div class="modify-export-pattern">Modify Export Pattern</div>
-                </div>
-                <div class="text-input">
-                  <div class="copy-export-pattern">Copy Export Pattern</div>
-                </div>
-                <div class="text-input">
-                  <div class="export-linkage-data">Export Linkage Data</div>
-                </div>
-              </div>
-              <div class="sub-nav-bar">
-                <div class="text-input2"></div>
-                <div class="text-input">
-                  <div class="export-linkage-data-order-management-software">
-                    Export Linkage Data(Order Management Software)
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -261,7 +239,46 @@
                     <div class="right2">
                       <div class="dropdown-container2">
                         <div class="dropdown2">
-                          <div class="item-master">Item Master</div>
+                          <select class="item-master" name="fileId" id="fileId">
+                            <option value="">Please select</option>
+                            <option value="1">Receiving Record</option>
+                            <option value="2">Shipment Record (BtoB)</option>
+                            <option value="31">Shipment Record (Subscription Order)</option>
+                            <option value="24">Shipment Record (Serial No.)</option>
+                            <option value="27">Shipment Package Record</option>
+                            <option value="4">Stock Information</option>
+                            <option value="5">Item Master</option>
+                            <option value="28">Item Master (Subscription Order)</option>
+                            <option value="6">SKU</option>
+                            <option value="29">SKU (Subscription Order)</option>
+                            <option value="7">Customer Master</option>
+                            <option value="8">Ship-to Master</option>
+                            <option value="9">Stock (Shipment Available)</option>
+                            <option value="10">Combination Set Master</option>
+                            <option value="30">Combination Set Master (Subscription Order)</option>
+                            <option value="11">Delivery Slip No.</option>
+                            <option value="12">Loading Pattern Conversion Master</option>
+                            <option value="13">Stock Key 1</option>
+                            <option value="14">Stock Key 2</option>
+                            <option value="15">Stock Key 3</option>
+                            <option value="16">Stock Key 4</option>
+                            <option value="17">Location Master</option>
+                            <option value="25">Stock History (Location)</option>
+                            <option value="26">Stock History (Item)</option>
+                            <option value="32">Enclosure Pattern Master</option>
+                            <option value="33">Subscription Frequency Enclosed Pattern Setting</option>
+                            <option value="34">Location Transfer History</option>
+                            <option value="35">Quantity Adjustment History</option>
+                            <option value="36">Status Change History</option>
+                            <option value="37">Stock-taking Result (Location unit)</option>
+                            <option value="38">Stock-taking Result (Item ID unit)</option>
+                            <option value="39">Yu-Pack Confirmed Data</option>
+                            <option value="40">Yu-Packet Confirmation Data</option>
+                            <option value="41">Yu-Pack Confirmation data of Convenience store receiving</option>
+                            <option value="42">Yu-Pack Receiving Confirmation data of Convenience store</option>
+                            <option value="43">Order Data</option>
+                            <option value="44">Receiving/Shipment Performance Data</option>
+                          </select>
                           <div class="arrow-down-icon2">
                             <svg
                               class="arrow-down-22"
@@ -316,7 +333,7 @@
                   </div>
                   <div class="textcontainer"></div>
                   <div class="form-item">
-                    <div class="header3">
+                    <div class="header3 initHidden">
                       <svg
                         class="icon-container2"
                         width="30"
@@ -1359,4 +1376,5 @@
     </div>
   </body>
   <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="../Common/common.js"></script>
 </html>

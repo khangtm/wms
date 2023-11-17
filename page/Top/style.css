@@ -174,11 +174,10 @@
   width: 1200px;
   height: 60px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 .tab-1 {
   background: #f0f0f0;
-  /* padding: 0px 5px 0px 5px; */
   display: flex;
   flex-direction: row;
   gap: 5px;
@@ -187,7 +186,7 @@
   align-self: stretch;
   flex: 1;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 .receiving {
   color: #7c7c7c;

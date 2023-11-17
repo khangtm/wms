@@ -171,11 +171,10 @@
   width: 1200px;
   height: 60px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 .tab-1 {
   background: #f0f0f0;
-  /* padding: 0px 5px 0px 5px; */
   display: flex;
   flex-direction: row;
   gap: 5px;
@@ -184,7 +183,7 @@
   align-self: stretch;
   flex: 1;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 .receiving {
   color: #7c7c7c;
@@ -358,6 +357,7 @@
   text-align: left;
   font: var(--normal, 400 15px "Inter-Regular", sans-serif);
   position: relative;
+  text-decoration: underline;
 }
 .bto-b {
   color: #000000;
@@ -1751,7 +1751,7 @@
   justify-content: center;
   align-self: stretch;
   flex-shrink: 0;
-  width: 141px;
+  width: 140px;
   position: relative;
 }
 .bto-b4 {
@@ -1836,7 +1836,7 @@
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
-  width: 121px;
+  width: 120px;
   position: relative;
 }
 .column-62 {
@@ -1852,7 +1852,7 @@
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
-  width: 159px;
+  width: 161px;
   position: relative;
 }
 ._11-14-20232 {
@@ -1874,11 +1874,10 @@
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
-  width: 156px;
+  width: 161px;
   position: relative;
 }
 .text-container8 {
-  background: #ffffff;
   display: flex;
   flex-direction: row;
   gap: 0px;
@@ -1908,7 +1907,7 @@
   text-align: left;
   font: 400 14px "Inter-Regular", sans-serif;
   position: relative;
-  width: 101px;
+  width: 140px;
 }
 .column-92 {
   background: #ffffff;
@@ -1923,7 +1922,7 @@
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
-  width: 159px;
+  width: 161px;
   position: relative;
 }
 .remarks {
@@ -1931,7 +1930,7 @@
   text-align: left;
   font: 400 14px "Inter-Regular", sans-serif;
   position: relative;
-  width: 101px;
+  width: 140px;
 }
 .column-93 {
   background: #ffffff;

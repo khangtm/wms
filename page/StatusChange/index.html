@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./vars.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./dropdownNavigationBar.css" />
+    <link rel="stylesheet" href="../Common/common.css" />
     <style>
       a,
       button,
@@ -30,7 +30,7 @@
     </style>
     <title>Document</title>
   </head>
-  <body>
+  <body onload="init()">
     <div class="inventory-status-change">
       <div class="header">
         <a href="../../index.html"><img class="logo-container" src="logo-container0.png" /></a>
@@ -38,7 +38,7 @@
           <div class="warehouse">Warehouse</div>
           <div class="dropdown-container">
             <div class="dropdown">
-              <div class="exe-hcm-wh">EXE-HCM-WH</div>
+              <div class="exe-hcm-wh">Internal</div>
               <svg
                 class="arrow-down-icon"
                 width="16"
@@ -156,8 +156,8 @@
                   <a href="../ShipToMaster/index.html">Ship-To Master</a>
                   <a href="../Import/index.html">Import</a>
                   <a href="../Export/index.html">Export</a>
-                  <a href="../LocationMasterLocationMaster/">Location Masters</a>
-                  <a href="../LocationMasterZoneMaster/">Zone Master</a>
+                  <a href="../LocationMasterLocationMaster/index.html">Location Masters</a>
+                  <a href="../LocationMasterZoneMaster/index.html">Zone Master</a>
                   <a href="../LocationMasterReceivingLocation/index.html">Receiving Location</a>
                 </div>
               </div>
@@ -302,7 +302,7 @@
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                         >
-                          <g clip-path="url(#clip0_262_7272)">
+                          <g clip-path="url(#clip0_336_1106)">
                             <rect
                               width="15"
                               height="15"
@@ -315,7 +315,7 @@
                             />
                           </g>
                           <defs>
-                            <clipPath id="clip0_262_7272">
+                            <clipPath id="clip0_336_1106">
                               <rect
                                 width="15"
                                 height="15"
@@ -361,12 +361,12 @@
                       </div>
                       <div class="column-8">
                         <div class="text-container6">
-                          <div class="quality">Quality</div>
+                          <div class="stock-qty">Stock Qty</div>
                         </div>
                       </div>
                       <div class="column-9">
                         <div class="text-container6">
-                          <div class="stock-qty">Stock Qty</div>
+                          <div class="quality">Quality</div>
                         </div>
                       </div>
                       <div class="column-10">
@@ -376,33 +376,56 @@
                       </div>
                       <div class="column-11">
                         <div class="text-container6">
-                          <div class="adjustable-qty">Adjustable Qty</div>
+                          <div class="selectable-qty">Selectable Qty</div>
                         </div>
                       </div>
-                      <div class="column-12">
-                        <svg class="pen-fill" width="18" height="10"></svg>
+                      <div class="column-121">
+                        <div class="text-container6"></div>
+                      </div>
+                      <div class="column-131">
+                        <svg class="x-icon" width="15" height="15"></svg>
                         <div class="text-container6">
-                          <div
-                            class="after-stock-adjustment-qty-excluding-allocated-qty"
-                          >
-                            After Stock Adjustment Qty(Excluding Allocated Qty)
+                          <div class="new-item-id">New Item ID</div>
+                        </div>
+                      </div>
+                      <div class="column-141">
+                        <svg class="x-icon2" width="15" height="15"></svg>
+                        <div class="text-container6">
+                          <div class="new-item-name">New Item Name</div>
+                        </div>
+                      </div>
+                      <div class="column-151">
+                        <svg class="x-icon3" width="15" height="15"></svg>
+                        <div class="text-container6">
+                          <div class="new-lot-number">New lot number</div>
+                        </div>
+                      </div>
+                      <div class="column-161">
+                        <svg class="x-icon4" width="15" height="15"></svg>
+                        <div class="text-container6">
+                          <div class="new-expiration-date">
+                            New expiration date
                           </div>
                         </div>
                       </div>
-                      <div class="column-13">
-                        <svg class="pen-fill2" width="18" height="10"></svg>
+                      <div class="column-171">
+                        <svg class="x-icon5" width="15" height="15"></svg>
                         <div class="text-container6">
-                          <div class="registered-adjustment-qty">
-                            Registered Adjustment Qty
+                          <div class="new-arrival-date">New arrival date</div>
+                        </div>
+                      </div>
+                      <div class="column-181">
+                        <svg class="x-icon6" width="15" height="15"></svg>
+                        <div class="text-container6">
+                          <div class="new-quality-category">
+                            New Quality Category
                           </div>
                         </div>
                       </div>
-                      <div class="column-14">
-                        <svg class="pen-fill3" width="18" height="10"></svg>
+                      <div class="column-191">
+                        <svg class="x-icon7" width="15" height="15"></svg>
                         <div class="text-container6">
-                          <div class="adjustment-reasons">
-                            Adjustment Reasons
-                          </div>
+                          <div class="change-qty">Change Qty</div>
                         </div>
                       </div>
                     </div>
@@ -417,7 +440,7 @@
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                           >
-                            <g clip-path="url(#clip0_262_7280)">
+                            <g clip-path="url(#clip0_336_1213)">
                               <rect
                                 width="15"
                                 height="15"
@@ -430,7 +453,7 @@
                               />
                             </g>
                             <defs>
-                              <clipPath id="clip0_262_7280">
+                              <clipPath id="clip0_336_1213">
                                 <rect
                                   width="15"
                                   height="15"
@@ -441,7 +464,7 @@
                             </defs>
                           </svg>
                         </div>
-                        <div class="column-15">
+                        <div class="column-110">
                           <div class="a">A</div>
                         </div>
                         <div class="column-22">
@@ -454,8 +477,8 @@
                         </div>
                         <div class="column-42">
                           <div class="text-container6">
-                            <div class="item-acid-delta-hp">
-                              Item ACID DELTA HP
+                            <div class="item-acid-delta-hp-2">
+                              Item ACID DELTA HP 2
                             </div>
                           </div>
                         </div>
@@ -476,12 +499,12 @@
                         </div>
                         <div class="column-82">
                           <div class="text-container6">
-                            <div class="">Ｃ品</div>
+                            <div class="_50">50</div>
                           </div>
                         </div>
                         <div class="column-92">
                           <div class="text-container6">
-                            <div class="_50">50</div>
+                            <div class="">Ｃ品</div>
                           </div>
                         </div>
                         <div class="column-102">
@@ -494,17 +517,44 @@
                             <div class="_50">50</div>
                           </div>
                         </div>
-                        <div class="column-122">
-                          <div class="text-container6">
-                            <div class="_50">50</div>
+                        <div class="column-1221">
+                          <div class="btnS">
+                            <div class="s">S</div>
                           </div>
                         </div>
-                        <div class="column-132">
+                        <div class="column-1321">
                           <div class="text-container6">
                             <div class="_0">0</div>
                           </div>
                         </div>
-                        <div class="column-142">
+                        <div class="column-1421">
+                          <div class="text-container6">
+                            <div class="item-acid-delta-hp">
+                              Item ACID DELTA HP
+                            </div>
+                          </div>
+                        </div>
+                        <div class="column-1521">
+                          <div class="text-container6">
+                            <div class="text"></div>
+                          </div>
+                        </div>
+                        <div class="column-1621">
+                          <div class="text-container6">
+                            <div class="text"></div>
+                          </div>
+                        </div>
+                        <div class="column-1721">
+                          <div class="text-container6">
+                            <div class="text"></div>
+                          </div>
+                        </div>
+                        <div class="column-1821">
+                          <div class="text-container6">
+                            <div class="text"></div>
+                          </div>
+                        </div>
+                        <div class="column-1921">
                           <div class="text-container6">
                             <div class="text"></div>
                           </div>
@@ -520,7 +570,7 @@
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                           >
-                            <g clip-path="url(#clip0_262_7276)">
+                            <g clip-path="url(#clip0_336_1289)">
                               <rect
                                 width="15"
                                 height="15"
@@ -533,7 +583,7 @@
                               />
                             </g>
                             <defs>
-                              <clipPath id="clip0_262_7276">
+                              <clipPath id="clip0_336_1289">
                                 <rect
                                   width="15"
                                   height="15"
@@ -544,30 +594,32 @@
                             </defs>
                           </svg>
                         </div>
-                        <div class="column-15">
+                        <div class="column-110">
                           <div class="a">A</div>
                         </div>
                         <div class="column-22">
-                          <div class="_001-001-02">001-001-02</div>
+                          <div class="_001-001-03">001-001-03</div>
                         </div>
                         <div class="column-32">
                           <div class="text-container6">
-                            <div class="demo-888">DEMO888</div>
+                            <div class="item-001">ITEM001</div>
                           </div>
                         </div>
                         <div class="column-42">
                           <div class="text-container6">
-                            <div class="demo-serial-no">Demo Serial No</div>
+                            <div class="item-acid-delta-hp-1">
+                              Item ACID DELTA HP 1
+                            </div>
                           </div>
                         </div>
                         <div class="column-52">
                           <div class="text-container6">
-                            <div class="_202306">202306</div>
+                            <div class="_202305">202305</div>
                           </div>
                         </div>
                         <div class="column-62">
                           <div class="text-container6">
-                            <div class="_09-2023">09/2023</div>
+                            <div class="_10-2023">10/2023</div>
                           </div>
                         </div>
                         <div class="column-72">
@@ -577,12 +629,12 @@
                         </div>
                         <div class="column-82">
                           <div class="text-container6">
-                            <div class="">Ｃ品</div>
+                            <div class="_300">300</div>
                           </div>
                         </div>
                         <div class="column-92">
                           <div class="text-container6">
-                            <div class="_50">50</div>
+                            <div class="">Ｃ品</div>
                           </div>
                         </div>
                         <div class="column-102">
@@ -592,20 +644,47 @@
                         </div>
                         <div class="column-112">
                           <div class="text-container6">
-                            <div class="_50">50</div>
+                            <div class="_300">300</div>
                           </div>
                         </div>
-                        <div class="column-122">
-                          <div class="text-container6">
-                            <div class="_50">50</div>
+                        <div class="column-1221">
+                          <div class="btnS">
+                            <div class="s">S</div>
                           </div>
                         </div>
-                        <div class="column-132">
+                        <div class="column-1321">
                           <div class="text-container6">
                             <div class="_0">0</div>
                           </div>
                         </div>
-                        <div class="column-142">
+                        <div class="column-1421">
+                          <div class="text-container6">
+                            <div class="item-acid-delta-hp">
+                              Item ACID DELTA HP
+                            </div>
+                          </div>
+                        </div>
+                        <div class="column-1521">
+                          <div class="text-container6">
+                            <div class="text"></div>
+                          </div>
+                        </div>
+                        <div class="column-1621">
+                          <div class="text-container6">
+                            <div class="text"></div>
+                          </div>
+                        </div>
+                        <div class="column-1721">
+                          <div class="text-container6">
+                            <div class="text"></div>
+                          </div>
+                        </div>
+                        <div class="column-1821">
+                          <div class="text-container6">
+                            <div class="text"></div>
+                          </div>
+                        </div>
+                        <div class="column-1921">
                           <div class="text-container6">
                             <div class="text"></div>
                           </div>
@@ -621,7 +700,7 @@
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                           >
-                            <g clip-path="url(#clip0_262_7284)">
+                            <g clip-path="url(#clip0_336_1365)">
                               <rect
                                 width="15"
                                 height="15"
@@ -634,7 +713,7 @@
                               />
                             </g>
                             <defs>
-                              <clipPath id="clip0_262_7284">
+                              <clipPath id="clip0_336_1365">
                                 <rect
                                   width="15"
                                   height="15"
@@ -645,11 +724,11 @@
                             </defs>
                           </svg>
                         </div>
-                        <div class="column-15">
+                        <div class="column-110">
                           <div class="a">A</div>
                         </div>
                         <div class="column-22">
-                          <div class="_001-001-02">001-001-02</div>
+                          <div class="_001-001-04">001-001-04</div>
                         </div>
                         <div class="column-32">
                           <div class="text-container6">
@@ -658,32 +737,29 @@
                         </div>
                         <div class="column-42">
                           <div class="text-container6">
-                            <div class="demo-serial-no">Demo Serial No</div>
+                            <div class="demo-serial-no-1">Demo Serial No 1</div>
                           </div>
                         </div>
                         <div class="column-52">
                           <div class="text-container6">
-                            <div class="_202306">202306</div>
+                            <div class="_20230501">20230501</div>
                           </div>
                         </div>
                         <div class="column-62">
                           <div class="text-container6">
-                            <div class="_09-2023">09/2023</div>
+                            <div class="_05-2023">05/2023</div>
                           </div>
                         </div>
                         <div class="column-72">
-                          <div class="text-container6">
-                            <div class="_05-19-2023">05/19/2023</div>
-                          </div>
                         </div>
                         <div class="column-82">
                           <div class="text-container6">
-                            <div class="">Ｃ品</div>
+                            <div class="_3">3</div>
                           </div>
                         </div>
                         <div class="column-92">
                           <div class="text-container6">
-                            <div class="_50">50</div>
+                            <div class="">Ｂ品</div>
                           </div>
                         </div>
                         <div class="column-102">
@@ -693,20 +769,45 @@
                         </div>
                         <div class="column-112">
                           <div class="text-container6">
-                            <div class="_50">50</div>
+                            <div class="_3">3</div>
                           </div>
                         </div>
-                        <div class="column-122">
-                          <div class="text-container6">
-                            <div class="_50">50</div>
+                        <div class="column-1221">
+                          <div class="btnS">
+                            <div class="s">S</div>
                           </div>
                         </div>
-                        <div class="column-132">
+                        <div class="column-1321">
                           <div class="text-container6">
                             <div class="_0">0</div>
                           </div>
                         </div>
-                        <div class="column-142">
+                        <div class="column-1421">
+                          <div class="text-container6">
+                            <div class="demo-serial-no">Demo Serial No</div>
+                          </div>
+                        </div>
+                        <div class="column-1521">
+                          <div class="text-container6">
+                            <div class="text"></div>
+                          </div>
+                        </div>
+                        <div class="column-1621">
+                          <div class="text-container6">
+                            <div class="text"></div>
+                          </div>
+                        </div>
+                        <div class="column-1721">
+                          <div class="text-container6">
+                            <div class="text"></div>
+                          </div>
+                        </div>
+                        <div class="column-1821">
+                          <div class="text-container6">
+                            <div class="text"></div>
+                          </div>
+                        </div>
+                        <div class="column-1921">
                           <div class="text-container6">
                             <div class="text"></div>
                           </div>
@@ -763,4 +864,5 @@
     </div>
   </body>
   <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="../Common/common.js"></script>
 </html>
