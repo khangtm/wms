@@ -3,6 +3,10 @@ function init(){
     initHidden.map((e) => {e.click()});
 }
 
+function onClickExecute(){
+    document.getElementById('id01').style.display='block';
+}
+
 var coll = Array.from(document.getElementsByClassName("header2"))
             .concat(Array.from(document.getElementsByClassName("header3")))
             .concat(Array.from(document.getElementsByClassName("header6")))

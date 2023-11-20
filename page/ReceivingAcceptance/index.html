@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./vars.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="../Common/common.css" />
@@ -1395,7 +1396,7 @@
                   </div>
                   <div class="row12">
                     <div class="frame-18">
-                      <div class="execute">Execute</div>
+                      <button class="execute" onclick="document.getElementById('id01').style.display='block';">Execute</button>
                     </div>
                   </div>
                 </div>
@@ -1716,7 +1717,7 @@
                           </div>
                           <div class="input-container2">
                             <div class="input6">
-                              <div class="_02">0</div>
+                              <div class="_02">5</div>
                             </div>
                           </div>
                         </div>
@@ -1726,7 +1727,7 @@
                           </div>
                           <div class="input-container2">
                             <div class="input7">
-                              <div class="_02">0</div>
+                              <div class="_02">5,000.00</div>
                             </div>
                           </div>
                         </div>
@@ -1736,20 +1737,6 @@
                           <div class="column-13">
                             <div class="item-id2">Item ID</div>
                           </div>
-                          <div class="column-23">
-                            <div class="stock-key-12">Stock Key 1</div>
-                          </div>
-                          <div class="column-3">
-                            <div class="stock-key-22">Stock Key 2</div>
-                          </div>
-                          <div class="column-4">
-                            <div class="stock-key-32">Stock Key 3</div>
-                          </div>
-                          <div class="column-5">
-                            <div class="text-container3">
-                              <div class="stock-key-42">Stock Key 4</div>
-                            </div>
-                          </div>
                           <div class="column-6">
                             <div class="text-container3">
                               <div class="item-name2">Item Name</div>
@@ -1758,34 +1745,6 @@
                           <div class="column-7">
                             <div class="text-container3">
                               <div class="search-name2">Search Name</div>
-                            </div>
-                          </div>
-                          <div class="column-8">
-                            <div class="text-container9">
-                              <div class="stock-key-name-12">
-                                Stock Key Name 1
-                              </div>
-                            </div>
-                          </div>
-                          <div class="column-9">
-                            <div class="text-container9">
-                              <div class="stock-key-name-22">
-                                Stock Key Name 2
-                              </div>
-                            </div>
-                          </div>
-                          <div class="column-10">
-                            <div class="text-container9">
-                              <div class="stock-key-name-32">
-                                Stock Key Name 3
-                              </div>
-                            </div>
-                          </div>
-                          <div class="column-11">
-                            <div class="text-container9">
-                              <div class="stock-key-name-42">
-                                Stock Key Name 4
-                              </div>
                             </div>
                           </div>
                           <div class="column-122">
@@ -1837,7 +1796,21 @@
                             </div>
                           </div>
                         </div>
-                        <div class="body3"></div>
+                        <div class="body3">
+                          <div class="row99">
+                            <div class="column-042">DEMO999</div>
+                            <div class="column-052">DEMO999</div>
+                            <div class="column-062"></div>
+                            <div class="column-072"></div>
+                            <div class="column-082"></div>
+                            <div class="column-092">11/20/2023</div>
+                            <div class="column-0102">11/20/2023</div>
+                            <div class="column-0112">5</div>
+                            <div class="column-0122">5</div>
+                            <div class="column-0132">1,000.00</div>
+                            <div class="column-0132">5,000.00</div>
+                          </div>
+                        </div>
                       </div>
                       <div class="textcontainer5">
                         <div class="page-top">▲ Page Top</div>
@@ -2043,6 +2016,48 @@
         </div>
       </div>
       
+    </div>
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container w3-teal"> 
+          <span onclick="document.getElementById('id01').style.display='none'" 
+          class="w3-button w3-display-topright">&times;</span>
+          <h2>File export processing</h2>
+        </header>
+        <div class="w3-container">
+          <p>Select file format and execute</p>
+          <div style="width: 100%; height: 300px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <div style="width: 100%; display: flex; flex-direction: column;">
+              <div style="border: 1px solid black; background-color: gray; color: white;">
+                <p>File Format</p>
+              </div>
+              <div style="display: flex; flex-direction: column;">
+                <div><input style="appearance: auto;" type="radio" id="pdf" name="typeOutput" value="1" checked><label for="pdf">Output of PDF</label></div>
+                <div><input style="appearance: auto;" type="radio" id="csv" name="typeOutput" value="2"><label for="csv">CSV output</label></div>
+              </div>
+            </div>
+            <div style="width: 100%; display: flex; flex-direction: column;">
+              <div style="border: 1px solid black; background-color: gray; color: white;">
+                <p>File Format</p>
+              </div>
+              <div style="display: flex; flex-direction: column;">
+                <div><input style="appearance: auto;" type="checkbox" id="checkbox" name="check1" value="1" checked><label for="check1">Receiving Acceptance Slip</label></div>
+              </div>
+            </div>
+            <div style="width: 100%; display: flex; flex-direction: column;">
+              <div style="border: 1px solid black; background-color: gray; color: white;">
+                <p>Download File</p>
+              </div>
+              <div style="display: flex; flex-direction: column;justify-content: center; align-items: center;">
+                <a href="./output.pdf" target="_blank" style="color: blue; text-decoration: underline;">Receiving Acceptance Slip</a>
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+            <button class="btn" style="background-color: blue; color: white;" onclick="document.getElementById('id01').style.display='none'" >Close</button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

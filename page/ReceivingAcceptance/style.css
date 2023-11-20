@@ -3305,11 +3305,11 @@
   width: 133px;
 }
 .body3 {
-  padding: 20px 0px 0px 0px;
+  /* padding: 20px 0px 0px 0px; */
   display: flex;
   flex-direction: row;
   gap: 0px;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
@@ -3606,3 +3606,191 @@
   font: 500 13px "Inter-Medium", sans-serif;
   position: relative;
 }
+
+.row99{
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 30px;
+  position: relative;
+}
+.column-042 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #7e7e7e;
+  border-width: 1px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 140px;
+  position: relative;
+}
+.column-052 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #7e7e7e;
+  border-width: 1px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 140px;
+  position: relative;
+}
+.column-062 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #7e7e7e;
+  border-width: 1px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 140px;
+  position: relative;
+}
+.column-072 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #7e7e7e;
+  border-width: 1px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 140px;
+  position: relative;
+}
+.column-082 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #7e7e7e;
+  border-width: 1px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 140px;
+  position: relative;
+}
+.column-092 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #7e7e7e;
+  border-width: 1px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 140px;
+  position: relative;
+}
+.column-0102 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #7e7e7e;
+  border-width: 1px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 140px;
+  position: relative;
+}
+.column-0112 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #7e7e7e;
+  border-width: 1px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 140px;
+  position: relative;
+}
+.column-0122 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #7e7e7e;
+  border-width: 1px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 180px;
+  position: relative;
+}
+.column-0132 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #7e7e7e;
+  border-width: 1px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 140px;
+  position: relative;
+}
+.column-0142 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #7e7e7e;
+  border-width: 1px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 140px;
+  position: relative;
+}
+

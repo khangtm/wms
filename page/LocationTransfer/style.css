@@ -699,6 +699,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .text-container6 {
   background: #000000;
   padding: 2px 1px 2px 1px;
@@ -1582,7 +1583,7 @@
   border-style: solid;
   border-color: #7e7e7e;
   border-width: 1px;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 10px 0px 0px;
   display: flex;
   flex-direction: row;
   gap: 0px;
@@ -1797,6 +1798,12 @@
   width: 180px;
   position: relative;
 }
+
+.column-input1 {
+  width: 160px;
+  height: 20px;
+}
+
 .column-72 {
   background: var(--white, #ffffff);
   border-style: solid;
@@ -1994,6 +2001,12 @@
   width: 200px;
   position: relative;
 }
+
+.column-input2 {
+  width: 180px;
+  height: 20px;
+}
+
 .column-172 {
   background: var(--white, #ffffff);
   border-style: solid;
