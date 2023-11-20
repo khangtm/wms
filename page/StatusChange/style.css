@@ -1857,6 +1857,11 @@
   width: 200px;
   position: relative;
 }
+.column-input1 {
+  width: 180px;
+  height: 20px;
+  font-size: 15px;
+}
 .text {
   color: var(--black, #000000);
   text-align: left;
@@ -1926,4 +1931,10 @@
   flex-shrink: 0;
   width: 120px;
   position: relative;
+}
+
+.column-input2 {
+  width: 100px;
+  height: 20px;
+  font-size: 15px;
 }
