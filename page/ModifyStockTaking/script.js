@@ -4,7 +4,9 @@ function init(){
 }
 
 function onClickExecute(){
-    document.getElementById('id01').style.display='block';
+    if(document.getElementById("print").checked){
+        document.getElementById('id01').style.display='block';
+    }
 }
 
 var coll = Array.from(document.getElementsByClassName("header2"))
