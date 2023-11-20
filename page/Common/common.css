@@ -1,3 +1,7 @@
+html,body {
+    font-family: sans-serif;
+}
+
 .Star {
     margin-left: 5px;
     color: red;
